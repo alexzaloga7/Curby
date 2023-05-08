@@ -1,0 +1,80 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.main {
+  @include tablet {
+    margin: 2.25rem;
+  }
+
+  @include desktop {
+    margin: 0rem;
+    padding-left: 7rem;
+    padding-top: 2rem;
+  }
+
+  &__header {
+    font-size: 1.5rem;
+    border-bottom: 1px solid $divider-color;
+    padding: 1rem 0rem;
+    font-weight: 700;
+    margin: 1rem;
+
+    @include tablet {
+      border: none;
+      font-size: 2rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $divider-color;
+    padding-bottom: 1rem;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__icons {
+    margin-right: 1rem;
+  }
+
+  &__container--left {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__container--right {
+    margin-right: 2rem;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      right: 0rem;
+    }
+  }
+
+  &__item--author {
+    padding: 0rem 1rem;
+    font-weight: 700;
+  }
+
+  &__item {
+    padding: 0rem 1rem;
+    color: $label-text-color;
+    font-weight: 400;
+  }
+
+  &__copy {
+    font-size: 0.87rem;
+    line-height: 1.8rem;
+    color: $primary-text-color;
+    margin: 1rem;
+  }
+}

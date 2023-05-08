@@ -1,0 +1,188 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.comments {
+  margin: 1rem;
+  padding-top: 1rem;
+  font-weight: 400;
+
+  @include tablet {
+    margin: 3.25rem;
+  }
+
+  @include desktop {
+    margin: 0rem;
+    padding-left: 8rem;
+  }
+
+  &__header {
+    font-weight: 700;
+    color: $label-text-color;
+    padding-left: 5.5rem;
+    padding-top: 2rem;
+    font-size: 0.8rem;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__id {
+    font-weight: 400;
+    font-family: Avenir;
+    height: 7rem;
+    width: 95%;
+    border-radius: 0.25rem;
+    border: solid 2px $divider-color;
+    background-color: $secondary-background-color;
+    resize: none;
+    padding: 1rem;
+    font-size: 1rem;
+
+    @include tablet {
+      margin-right: 2rem;
+      height: 3rem;
+      padding: 0.8rem;
+      height: 3.3rem;
+    }
+  }
+
+  &__id:focus {
+    outline: 2px solid $primary-cta-color;
+    border: none;
+  }
+
+  &__button {
+    background-color: $primary-cta-color;
+    padding: 0rem 1rem;
+    text-decoration: none;
+    color: $background-cta-color;
+    border: none;
+    width: 95%;
+    border-radius: 0.3rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    cursor: pointer;
+
+    @include tablet {
+      height: 3rem;
+      margin-top: 0rem;
+    }
+  }
+
+  &__image {
+    width: 3.5rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    background-color: $divider-color;
+    margin-left: 1rem;
+
+    @include tablet {
+      margin-top: 0rem;
+      margin-left: 0rem;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $divider-color;
+
+    @include desktop {
+      padding-right: 1.5rem;
+    }
+  }
+
+  &__date {
+    color: $label-text-color;
+    font-size: 1.1rem;
+  }
+
+  &__avatar--container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__placeholder {
+    width: 3.5rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+    background-color: $divider-color;
+
+    @include tablet {
+      margin: 0rem;
+    }
+  }
+
+  &__main--container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  &__author {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  &__authordate--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__display {
+    display: flex;
+    border-bottom: 1px solid $label-text-color;
+    padding: 1rem 0rem;
+
+    @include desktop {
+      padding: 0.6rem 2rem 0.6rem 0rem;
+    }
+  }
+
+  &__placeholder--container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__number {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  &__button--text {
+    position: relative;
+    left: 25%;
+  }
+
+  &__button--icon {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__text {
+    font-size: 0.87rem;
+    line-height: 1.8rem;
+  }
+}
+
+::placeholder {
+  color: $primary-text-color;
+  font-size: 1rem;
+}
