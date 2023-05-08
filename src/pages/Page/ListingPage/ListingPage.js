@@ -3,6 +3,7 @@ import VideoList from "../../../Components/VideoList/VideoList";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import PageHeader from "../../../Components/PageHeader/PageHeader";
 
 function ListingPage() {
   const params = useParams();
@@ -29,7 +30,7 @@ function ListingPage() {
 
   return (
     <div className="ListingPage">
-      <p>hi</p>
+      <PageHeader />
       <aside>
         <VideoList nextVid={nextVideos} />
       </aside>

@@ -5,6 +5,7 @@ import VideoList from "./Components/VideoList/VideoList";
 import UploadPage from "./pages/Page/UploadPage/UploadPage";
 import ListingPage from "./pages/Page/ListingPage/ListingPage";
 import SingleListing from "./pages/Page/SingleListing/SingleListing";
+import LetsGetStarted from "./pages/Page/LetsGetStarted/LetsGetStarted";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           {/* <Route path="/:id" element={<HomePage />}></Route> */}
           <Route path="/uploads" element={<UploadPage />} />
           <Route path="/listings" element={<ListingPage />} />
+          <Route path="/letsgetstarted" element={<LetsGetStarted />} />
         </Routes>
       </BrowserRouter>
     </div>

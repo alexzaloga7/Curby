@@ -1,5 +1,5 @@
 import "./Comments.scss";
-import CommentsAvatar from "../../assets/Images/Mohan-muruge.jpg";
+// import CommentsAvatar from "../../assets/Images/Mohan-muruge.jpg";
 import CommentsAsset from "../../assets/Icons/add_comment.svg";
 
 const Comments = (props) => {
@@ -12,8 +12,8 @@ const Comments = (props) => {
       <div className="comments__wrap">
         <img
           className="comments__image"
-          src={CommentsAvatar}
-          alt="BrainFlix Avatar"
+          // src={CommentsAvatar}
+          // alt="BrainFlix Avatar"
         />
         <form className="comments__form">
           <textarea

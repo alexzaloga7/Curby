@@ -70,3 +70,40 @@
   background-color: #04aa6d;
   color: white;
 }
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-header {
+  color: #04aa6d;
+  position: absolute;
+  top: 18rem;
+  margin-left: 19rem;
+}
+
+.hero-works {
+  border: solid 1px rgb(215, 214, 214);
+  border-radius: 1rem;
+  height: 10rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-subheader {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.hero-icon {
+  width: 3rem;
+  margin: 1rem;
+}
+
+.hero-text {
+}
+
+.hero-text__container {
+  display: flex;
+}

@@ -3,6 +3,11 @@
 @use "../../styles/partials/variables" as *;
 
 .aside {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem;
+  border: 4px solid #ccc;
+
   @include tablet {
     width: 31rem;
     margin: 2rem;
@@ -18,43 +23,49 @@
   }
 
   &__video {
-    border-radius: 0.5rem;
-    margin-right: 1rem;
+    border-radius: 0.2rem;
+
     cursor: pointer;
-    width: 9rem;
-    height: 6rem;
-  }
-
-  &__header {
-    font-size: 0.87rem;
-    font-weight: 700;
-    color: $label-text-color;
-    margin: 1rem;
-  }
-
-  &__box {
-    display: flex;
-    flex-wrap: nowrap;
+    width: 18rem;
+    height: 18rem;
+    padding: 0rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-
-    @include desktop {
-      margin-bottom: 2.2rem;
-    }
-  }
-
-  &__text {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.87rem;
-  }
-
-  &__title {
-    font-size: 1rem;
-    margin: 0rem;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: $primary-text-color;
+    border-radius: 50%;
   }
 }
+
+//   &__header {
+//     font-size: 0.87rem;
+//     font-weight: 700;
+//     color: $label-text-color;
+//     margin: 1rem;
+//   }
+
+//   &__box {
+//     display: flex;
+//     flex-wrap: nowrap;
+//     margin-bottom: 1rem;
+
+//     @include desktop {
+//       margin-bottom: 2.2rem;
+//     }
+//   }
+
+//   &__text {
+//     display: flex;
+//     flex-direction: column;
+//     font-size: 0.87rem;
+//   }
+
+//   &__title {
+//     font-size: 1rem;
+//     margin: 0rem;
+//   }
+
+//   &__link {
+//     text-decoration: none;
+//     color: $primary-text-color;
+//   }
+// }

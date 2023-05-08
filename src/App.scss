@@ -15,15 +15,15 @@
   font-family: "Poppins", Times, serif;
 }
 
-.Body {
-  margin: 0rem;
-  display: flex;
-  flex-direction: column;
+// .Body {
+//   margin: 0rem;
+//   display: flex;
+//   flex-direction: column;
 
-  @include desktop {
-    display: flex;
-    flex-direction: row;
-    min-width: 98%;
-    max-width: 100%;
-  }
-}
+//   @include desktop {
+//     display: flex;
+//     flex-direction: row;
+//     min-width: 98%;
+//     max-width: 100%;
+//   }
+// }

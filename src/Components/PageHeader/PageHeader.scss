@@ -4,10 +4,11 @@
 
 .header {
   display: flex;
-  flex-direction: column;
+  padding: 1rem;
   align-items: center;
   margin: 0rem, 1rem;
-  background-color: rgb(143, 192, 117);
+  background-color: rgb(134, 234, 177);
+  height: 18rem;
 
   @include tablet {
     display: flex;
@@ -17,129 +18,109 @@
   @include desktop {
     margin: 0rem;
   }
+}
 
-  &__logo {
-    width: 12rem;
-    padding: 1rem;
-    width: 100px;
-    animation: rotation 15s infinite linear;
-    @keyframes rotation {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(359deg);
-      }
+.logo-container {
+  position: relative;
+}
+
+.logo-text {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-image {
+  width: 8rem;
+  animation: rotation 15s infinite linear;
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
     }
-
-    @include desktop {
-      width: 12rem;
-      padding: 1rem;
-      margin-right: 19rem;
-    }
-  }
-
-  &__searchbar {
-    width: 100%;
-    height: 3rem;
-    border: 1.5px solid $divider-color;
-    border-radius: 0.3rem;
-    background-color: $secondary-background-color;
-    background-image: url("../../assets/Icons/search.svg");
-    padding-left: 4rem;
-    padding-right: 2rem;
-    background-repeat: no-repeat;
-    background-size: 2rem;
-    background-position: 5%;
-
-    @include tablet {
-      height: 3.2rem;
-      margin-left: 2rem;
-      width: 73%;
-      padding-right: 0rem;
-    }
-
-    @include desktop {
-      width: 80%;
-      margin-right: 1rem;
+    to {
+      transform: rotate(359deg);
     }
   }
+}
 
-  &__searchbar:focus {
-    outline: 2px solid $primary-cta-color;
-    border: none;
-  }
+.burger-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  margin: 1rem;
+  margin-right: 8rem;
+  z-index: 0;
+}
 
-  &__upload {
-    background-color: rgb(154, 202, 154);
-    margin: 1rem;
-    padding: 0rem 1rem;
-    text-decoration: none;
-    color: $background-cta-color;
-    width: 100%;
-    border-radius: 0.3rem;
-    font-weight: 700;
-    font-size: 1rem;
-    display: flex;
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1.1rem;
+}
 
-    @include tablet {
-      font-size: 1rem;
-      width: 87%;
-      margin: 0rem;
-    }
+.menu-icon span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ffffff;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
 
-    @include desktop {
-      width: 50%;
-      margin-right: 2rem;
-    }
-  }
+.menu-icon.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
 
-  &__upload--text {
-    position: relative;
-    left: 37%;
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
 
-    @include tablet {
-      left: 22%;
-    }
-  }
+.menu-icon.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
-  &__upload--icon {
-    display: flex;
-    justify-content: flex-start;
-  }
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 9rem;
+  background: #ffffff35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.2s ease-in-out;
+}
 
-  &__avatar {
-    width: 3.5rem;
-    height: 3.2rem;
-    border-radius: 50%;
-    margin-left: 1rem;
-    border-radius: 50%;
-    background-color: $divider-color;
+.menu.open {
+  left: 0;
 
-    @include tablet {
-      display: none;
-    }
-  }
+  z-index: 0;
+  height: 18rem;
+}
 
-  &__avatar--tablet {
-    display: none;
+.menu ul {
+  list-style: none;
+  text-align: center;
+}
 
-    @include tablet {
-      display: flex;
-      width: 3.5rem;
-      height: 3.2rem;
-      border-radius: 50%;
-      margin-left: 1rem;
-    }
-  }
+.menu ul li {
+  margin: 1rem 0;
+}
 
-  &__box {
-    display: flex;
-    width: 100%;
-    align-items: center;
+.menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  font-weight: 700;
+}
 
-    @include desktop {
-      justify-content: flex-end;
-    }
-  }
+.menu ul li a:hover {
+  color: #3dff74;
 }

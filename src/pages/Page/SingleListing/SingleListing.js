@@ -51,7 +51,6 @@ function SingleListing() {
 
   return (
     <div className="SingleListing">
-      <p>hi</p>
       <PageHeader />
       <VideoPlayer videoContent={videoContent} />
       <div className="Body">
