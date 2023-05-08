@@ -10,7 +10,7 @@
   }
 
   &__section {
-    margin: 1rem;
+    margin: 5rem;
   }
   &__header {
     font-size: 2rem;
@@ -73,7 +73,7 @@
     font-family: Avenir;
 
     border-radius: 0.25rem;
-    border: solid 2px $divider-color;
+    border: solid 2px #04aa6d;
     background-color: $secondary-background-color;
     resize: none;
     padding: 1rem;

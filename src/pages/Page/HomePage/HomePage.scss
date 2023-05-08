@@ -101,7 +101,24 @@
   margin: 1rem;
 }
 
-.hero-text {
+.hero-button__container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+.hero-button {
+  background-color: #04aa6d;
+  width: 9rem;
+  height: 4.5rem;
+  border-radius: 5%;
+}
+
+.hero-button__text {
+  width: 9rem;
+
+  text-align: center;
+  color: white;
 }
 
 .hero-text__container {

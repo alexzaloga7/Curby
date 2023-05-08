@@ -90,6 +90,18 @@ function HomePage() {
         <h1 className="hero-header">Let's get started</h1>
       </Link>
 
+      <div className="hero-button__container">
+        <div className="hero-button">
+          <Link to={"/uploads"}>
+            <h2 className="hero-button__text">Upload</h2>
+          </Link>
+        </div>
+        <div className="hero-button">
+          <Link to={"/listings"}>
+            <h2 className="hero-button__text">Browse</h2>
+          </Link>
+        </div>
+      </div>
       <div className="hero-works">
         <img className="hero-icon" src={PhoneImage} alt="Phone" />
         <div className="hero-text__container">
