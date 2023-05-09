@@ -56,7 +56,7 @@ function SingleListing() {
       <div className="Body">
         <section>
           <Main videoContent={videoContent} />
-          <Comments videoContent={videoContent} />
+          {/* <Comments videoContent={videoContent} /> */}
         </section>
         {/* <aside>
           <VideoList nextVid={nextVideos} />

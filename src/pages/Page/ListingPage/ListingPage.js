@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import PageHeader from "../../../Components/PageHeader/PageHeader";
+import Footer from "../../../Components/Footer/Footer";
 
 function ListingPage() {
   const params = useParams();
@@ -34,6 +35,7 @@ function ListingPage() {
       <aside>
         <VideoList nextVid={nextVideos} />
       </aside>
+      <Footer />
     </div>
   );
 }
