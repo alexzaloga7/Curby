@@ -8,6 +8,7 @@ import Comments from "../../../Components/Comments/Comments";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import Footer from "../../../Components/Footer/Footer";
 
 function useVideo(id) {
   const [videoContent, setVideoContent] = useState(null);
@@ -61,6 +62,7 @@ function SingleListing() {
         {/* <aside>
           <VideoList nextVid={nextVideos} />
         </aside> */}
+        <Footer />
       </div>
     </div>
   );

@@ -104,6 +104,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import GoogleMaps from "../../../Components/GoogleMaps/GoogleMaps";
+import UploadIcon from "../../../assets/Icons/uploadicon.svg";
 
 function UploadPage() {
   const [videos, setVideos] = useState();
@@ -160,7 +161,6 @@ function UploadPage() {
       <div className="upload__section">
         <div className="upload__main--container">
           <div className="upload__image--container">
-            <h2 className="upload__subheader"> Upload Image</h2>
             {preview && (
               <img
                 className="upload__image-preview"
@@ -191,7 +191,13 @@ function UploadPage() {
 
             <div className="upload__button--container">
               <button type="submit" className="upload__button">
-                <p className="upload__button--text">Post</p>
+                <div className="upload__button--text">
+                  <img
+                    className="footer-add"
+                    src={UploadIcon}
+                    alt="add button"
+                  ></img>
+                </div>
               </button>
               <Link to={"/"}>
                 <p className="upload__cancel">Cancel</p>
@@ -200,6 +206,7 @@ function UploadPage() {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

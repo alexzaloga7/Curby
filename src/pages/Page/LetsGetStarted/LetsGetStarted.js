@@ -4,6 +4,7 @@ import PhoneImage from "../../../assets/Icons/Green and White Griddy Big Type Ge
 import LocationImage from "../../../assets/Icons/location.svg";
 import UploadImage from "../../../assets/Icons/uploadicon.svg";
 import FindImage from "../../../assets/Icons/Untitled design (6).svg";
+import Footer from "../../../Components/Footer/Footer";
 
 function LetsGetStarted() {
   return (
@@ -40,6 +41,7 @@ function LetsGetStarted() {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
