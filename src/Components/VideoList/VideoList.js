@@ -1,5 +1,6 @@
 import "./VideoList.scss";
 import { Link } from "react-router-dom";
+import LikesAsset from "../../assets/Icons/likes.svg";
 
 function VideoList({ nextVid }) {
   return (
@@ -16,10 +17,20 @@ function VideoList({ nextVid }) {
                   alt="video preview list"
                 ></img>
               </div>
-              {/* <div className="aside__text">
-              <h2 className="aside__title">{video.title}</h2>
-              <p className="aside__creator">{video.channel}</p>
-            </div> */}
+              <div className="aside__text">
+                <div className="aside__description">
+                  <h2 className="aside__title">{video.title}</h2>
+                  <div className="aside__likes">
+                    <img
+                      className="main__icons"
+                      src={LikesAsset}
+                      alt="likes emojii"
+                    ></img>
+                    <p className="aside__creator">{video.likes}</p>
+                  </div>
+                </div>
+                <p className="aside__location">{video.location}</p>
+              </div>
             </div>
           </Link>
         ))}

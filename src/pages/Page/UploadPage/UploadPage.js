@@ -6,9 +6,70 @@ import { Link, useNavigate } from "react-router-dom";
 import GoogleMaps from "../../../Components/GoogleMaps/GoogleMaps";
 
 function UploadPage() {
-  const [thumbnail, setThumbnail] = useState(null);
+  // const [thumbnail, setThumbnail] = useState(null);
   const [videos, setVideos] = useState();
+
+  const [image, setImage] = useState(null);
+
   const navigate = useNavigate();
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   const submit = event.target;
+  //   const title = submit.title.value;
+  //   const description = submit.description.value;
+  //   const location = submit.location.value;
+  //   //
+  //   const formData = new FormData();
+  //   formData.append("image", image);
+  //   //
+  //   if (!title || !description || !location) {
+  //     alert(
+  //       "please enter both title, description, location to complete upload"
+  //     );
+  //     return;
+  //   } else {
+  //     axios
+  //       .post("http://localhost:3001/videos", {
+  //         title,
+  //         description,
+  //         location,
+  //         formData,
+  //       })
+  //       .then(() => {
+  //         setVideos(videos);
+  //         alert("Uploaded successfully");
+  //         navigate("/listings");
+  //       });
+  //   }
+  // };
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   const submit = event.target;
+  //   const title = submit.title.value;
+  //   const description = submit.description.value;
+  //   const location = submit.location.value;
+
+  //   if (!title || !description || !location || !image) {
+  //     alert("Please enter all required fields to complete upload");
+  //     return;
+  //   }
+
+  //   const formData = new FormData();
+  //   formData.append("image", image);
+
+  //   axios
+  //     .post("http://localhost:3001/videos/", formData)
+  //     .then(() => {
+  //       alert("Uploaded successfully");
+  //       navigate("/listings");
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //       alert("Failed to upload video");
+  //     });
+  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -17,29 +78,32 @@ function UploadPage() {
     const description = submit.description.value;
     const location = submit.location.value;
 
-    if (!title || !description || !location) {
-      alert(
-        "please enter both title, description, location to complete upload"
-      );
+    if (!title || !description || !location || !image) {
+      alert("Please enter all required fields to complete upload");
       return;
-    } else {
-      axios
-        .post("http://localhost:3001/videos/", {
-          title,
-          description,
-          location,
-        })
-        .then(() => {
-          setVideos(videos);
-          alert("Uploaded successfully");
-          navigate("/listings");
-        });
     }
+
+    const formData = new FormData();
+    formData.append("title", title);
+    formData.append("description", description);
+    formData.append("location", location);
+    formData.append("image", image);
+
+    axios
+      .post("http://localhost:3001/videos/", formData)
+      .then(() => {
+        alert("Uploaded successfully");
+        navigate("/listings");
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Failed to upload video");
+      });
   };
 
-  const handleThumbnailChange = (event) => {
-    setThumbnail(event.target.files[0]);
-  };
+  // const handleThumbnailChange = (event) => {
+  //   setThumbnail(event.target.files[0]);
+  // };
 
   return (
     <div className="upload">
@@ -50,16 +114,19 @@ function UploadPage() {
             <h2 className="upload__subheader"> Upload Image</h2>
             <input
               type="file"
-              onChange={handleThumbnailChange}
+              // onChange={handleThumbnailChange}
               accept="image/*"
+              onChange={(e) => {
+                setImage(e.target.files[0]);
+              }}
             />
-            {thumbnail && (
+            {/* {thumbnail && (
               <img
                 className="upload__image"
                 src={URL.createObjectURL(thumbnail)}
                 alt="video thumbnail"
-              />
-            )}
+              /> */}
+            {/* )} */}
           </div>
           <form onSubmit={handleSubmit} className="upload__form">
             <h2 className="upload__subheader">Title</h2>

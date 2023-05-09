@@ -75,6 +75,7 @@ import PhoneImage from "../../../assets/Icons/Green and White Griddy Big Type Ge
 import LocationImage from "../../../assets/Icons/location.svg";
 import UploadImage from "../../../assets/Icons/uploadicon.svg";
 import FindImage from "../../../assets/Icons/Untitled design (6).svg";
+import Footer from "../../../Components/Footer/Footer";
 
 import { Link } from "react-router-dom";
 
@@ -133,7 +134,7 @@ function HomePage() {
           </p>
         </div>
       </div>
-      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      {/* <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
       <link
         rel="stylesheet"
         href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -147,7 +148,8 @@ function HomePage() {
         <div class="carousel-cell">...</div>
         <div class="carousel-cell">...</div>
         ...
-      </div>
+      </div> */}
+      <Footer />
     </div>
   );
 }
