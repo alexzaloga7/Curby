@@ -2,13 +2,13 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
 
-.header {
+.navbar {
   align-items: center;
   margin: 0rem, 1rem;
   background-image: url("../../assets/Images/matt-hanns-schroeter-YJuyTFWPjZU-unsplash\ \(1\).jpg");
   background-size: cover;
   background-position: center;
-  height: 54rem;
+  height: 15rem;
   width: 100%;
 
   @include tablet {
@@ -26,36 +26,15 @@
   }
 }
 
-.header-start {
-  color: #000000;
-  font-weight: 600;
-  position: absolute;
-  top: 20rem;
-  right: 4rem;
-  background-color: #ffffff;
-  width: 10rem;
-  text-align: center;
-  margin-left: 5rem;
-  font-size: 0.6rem;
-  border-radius: 10px;
-  padding: 0.4rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  &:hover {
-    background-color: #72e350;
-    color: white;
-  }
-}
-
-.header-container {
+.navbar-container {
   display: flex;
 }
 
-.logo-image {
-  width: 7.3rem;
+.navbar-image {
+  width: 6.3rem;
   position: absolute;
-  top: 10.8rem;
-  left: 7.7rem;
+  top: 4.8rem;
+  left: 10.2rem;
   animation: rotation 27s infinite linear;
   @keyframes rotation {
     from {
@@ -66,15 +45,29 @@
     }
   }
 
-  @include desktop {
-    width: 15rem;
+  @include tablet {
+    width: 8rem;
+    position: absolute;
+    top: 7.1rem;
+    left: 22.2rem;
   }
 }
 
-.header-title {
+.navbar-title {
   position: absolute;
-  left: 9rem;
-  top: 6rem;
-  font-size: 6rem;
+  margin-right: 5rem;
+  font-size: 5rem;
   color: white;
+
+  @include tablet {
+    font-size: 7rem;
+  }
+}
+
+.navbar-box {
+  margin-left: 8rem;
+
+  @include tablet {
+    margin-left: 20rem;
+  }
 }

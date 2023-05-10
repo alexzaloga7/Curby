@@ -1,8 +1,8 @@
 import "./SingleListing.scss";
 
-import PageHeader from "../../../Components/PageHeader/PageHeader";
+import NavBar from "../../../Components/NavBar/NavBar";
 import VideoPlayer from "../../../Components/VideoPlayer/VideoPlayer";
-import Main from "../../../Components/Main/Main";
+import ItemInfo from "../../../Components/ItemInfo/ItemInfo";
 import Comments from "../../../Components/Comments/Comments";
 // import VideoList from "../../../Components/VideoList/VideoList";
 import { useState, useEffect } from "react";
@@ -52,11 +52,11 @@ function SingleListing() {
 
   return (
     <div className="SingleListing">
-      <PageHeader />
+      <NavBar />
       <VideoPlayer videoContent={videoContent} />
       <div className="Body">
         <section>
-          <Main videoContent={videoContent} />
+          <ItemInfo videoContent={videoContent} />
           {/* <Comments videoContent={videoContent} /> */}
         </section>
         {/* <aside>

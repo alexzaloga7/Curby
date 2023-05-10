@@ -1,0 +1,52 @@
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/typography" as *;
+@use "../../../styles/partials/variables" as *;
+
+.hero-works {
+  border: solid 1px rgb(215, 214, 214);
+  border-radius: 1rem;
+  height: rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-subheader {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.hero-icon {
+  width: 3rem;
+  max-height: 3rem;
+  margin: 1rem;
+}
+
+.hero-button__container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+.hero-button {
+  background-color: #04aa6d;
+  width: 9rem;
+  height: 4.5rem;
+  border-radius: 5%;
+}
+
+.hero-button__text {
+  width: 9rem;
+
+  text-align: center;
+  color: white;
+}
+
+.hero-text__container {
+  display: flex;
+}
+
+.hero-container {
+  margin-top: 4rem;
+}

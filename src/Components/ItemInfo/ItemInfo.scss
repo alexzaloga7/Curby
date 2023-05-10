@@ -2,9 +2,9 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
 
-.main {
+.item-info {
   @include tablet {
-    margin: 2.25rem;
+    margin: 4.25rem;
   }
 
   @include desktop {
@@ -15,7 +15,7 @@
 
   &__header {
     font-size: 1.5rem;
-    border-bottom: 1px solid $divider-color;
+
     padding: 1rem 0rem;
     font-weight: 700;
     margin: 1rem;

@@ -98,7 +98,7 @@
 // export default UploadPage;
 
 import "./UploadPage.scss";
-import Header from "../../../Components/PageHeader/PageHeader";
+import NavBar from "../../../Components/NavBar/NavBar";
 import Footer from "../../../Components/Footer/Footer";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -136,7 +136,7 @@ function UploadPage() {
       .post("http://localhost:3001/videos/", formData)
       .then(() => {
         alert("Uploaded successfully");
-        navigate("/listings");
+        navigate("/gallery");
       })
       .catch((error) => {
         console.error(error);
@@ -157,7 +157,7 @@ function UploadPage() {
 
   return (
     <div className="upload">
-      <Header />
+      <NavBar />
       <div className="upload__section">
         <div className="upload__main--container">
           <div className="upload__image--container">
@@ -194,7 +194,7 @@ function UploadPage() {
               <button type="submit" className="upload__button">
                 <div className="upload__button--text">
                   <img
-                    className="footer-add"
+                    className="upload-add"
                     src={UploadIcon}
                     alt="add button"
                   ></img>

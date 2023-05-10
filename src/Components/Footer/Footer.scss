@@ -3,24 +3,18 @@
 @use "../../styles/partials/variables" as *;
 
 .footer {
-  background-color: rgb(134, 234, 177);
+  background-color: rgb(177, 232, 146);
   height: 3.5rem;
   position: fixed;
   bottom: 0rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
-}
+  margin: 0;
+  padding-top: 0.3rem;
 
-.footer-add {
-  width: 3rem;
-  padding: 0.3rem;
+  &-icon {
+    width: 3rem;
+    padding: 0.3rem;
+  }
 }
-// .footer-email {
-//   margin: 1rem;
-//   font-size: 1.2rem;
-//   padding-top: 1.5rem;
-//   padding-left: 1rem;
-//   color: white;
-//   font-weight: 700;
-// }
