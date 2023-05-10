@@ -91,7 +91,7 @@ function HomePage() {
         <h1 className="hero-header">Start your impact</h1>
       </Link>
 
-      <div className="hero-works">
+      {/* <div className="hero-works">
         <img className="hero-icon" src={PhoneImage} alt="Phone" />
         <div className="hero-text__container">
           <p className="hero-text">
@@ -121,7 +121,7 @@ function HomePage() {
             sharing!
           </p>
         </div>
-      </div>
+      </div> */}
       {/* <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
       <link
         rel="stylesheet"

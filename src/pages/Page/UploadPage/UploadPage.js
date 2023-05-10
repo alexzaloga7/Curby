@@ -188,6 +188,7 @@ function UploadPage() {
               className="upload__id"
               placeholder="Location"
             ></textarea>
+            <GoogleMaps />
 
             <div className="upload__button--container">
               <button type="submit" className="upload__button">
