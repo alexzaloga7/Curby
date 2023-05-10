@@ -4,6 +4,7 @@ import HeaderLogo from "../../assets/Logo/Screenshot 2023-05-03 at 10.24.46 PM.p
 import UploadAsset from "../../assets/Icons/upload.svg";
 import { Link } from "react-router-dom";
 import CurbyLogo from "../../assets/Logo/Untitled design (2).svg";
+import CurbyLogo2 from "../../assets/Logo/curbylogo.svg";
 import React, { useState, useEffect } from "react";
 
 function Header() {
@@ -27,36 +28,55 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="burger-menu">
-        <div
-          className={`menu-icon ${isOpen ? "open" : ""}`}
-          onClick={handleClick}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+      <div className="header-container">
+        <div className="burger-menu">
+          <div
+            className={`menu-icon ${isOpen ? "open" : ""}`}
+            onClick={handleClick}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav className={`menu ${isOpen ? "open" : ""}`}>
+            <ul>
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link to={"/listings"}>Gallery</Link>
+              </li>
+              <li>
+                <Link to={"/uploads"}>Upload</Link>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav className={`menu ${isOpen ? "open" : ""}`}>
-          <ul>
-            <li>
-              <Link to={"/"}>Home</Link>
-            </li>
-            <li>
-              <Link to={"/listings"}>Gallery</Link>
-            </li>
-            <li>
-              <Link to={"/uploads"}>Upload</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
 
-      <div className="logo-container">
+        {/* <div className="logo-container"> */}
+        {/* <Link to={"/"}>
+            <img
+              className="logo-image"
+              src={CurbyLogo}
+              alt="Curby Header Logo"
+            />
+            <p className="logo-text">Curby</p>
+          </Link> */}
         <Link to={"/"}>
-          <img className="logo-image" src={CurbyLogo} alt="Curby Header Logo" />
-          <p className="logo-text">Curby</p>
+          <img
+            className="logo-image"
+            src={CurbyLogo2}
+            alt="Curby Header Logo"
+          />
+          {/* <p className="logo-text">Curby</p> */}
         </Link>
       </div>
+      <div className="hero-headers__container">
+        <Link to={"/letsgetstarted"}>
+          <h1 className="hero-headers">Start your impact</h1>
+        </Link>
+      </div>
+      {/* </div> */}
     </header>
   );
 }
