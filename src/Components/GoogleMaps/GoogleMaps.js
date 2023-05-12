@@ -100,6 +100,8 @@
 // }
 
 // export default GoogleMaps;
+import "./GoogleMaps.scss";
+
 import React, { useState, useEffect } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
 
@@ -149,7 +151,7 @@ function GoogleMaps() {
 
   return (
     <div>
-      <div>
+      {/* <div>
         <label htmlFor="postal-code-input">Enter postal code:</label>
         <input
           type="text"
@@ -157,8 +159,12 @@ function GoogleMaps() {
           value={postalCode}
           onChange={handleInputChange}
         />
-      </div>
-      <div id="map" style={{ width: "100%", height: "500px" }}></div>
+      </div> */}
+      <div
+        className="googlemap"
+        id="map"
+        style={{ width: "100%", height: "500px" }}
+      ></div>
     </div>
   );
 }

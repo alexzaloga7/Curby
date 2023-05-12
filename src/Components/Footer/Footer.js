@@ -1,9 +1,9 @@
 import "./Footer.scss";
 import { Link } from "react-router-dom";
-import AddIcon from "../../assets/Icons/add.svg";
-import SearchIcon from "../../assets/Icons/searchicon.svg";
-import InstagramIcon from "../../assets/Icons/instagram.svg";
-import EmailIcon from "../../assets/Icons/email.svg";
+import AddIcon from "../../assets/Icons/addb.svg";
+import SearchIcon from "../../assets/Icons/searchb.svg";
+import InstagramIcon from "../../assets/Icons/instab.svg";
+import EmailIcon from "../../assets/Icons/emailb.svg";
 
 function Footer() {
   return (

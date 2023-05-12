@@ -30,9 +30,9 @@ function ItemInfo(props) {
       <h1 className="item-info__header">{props.itemContent.title}</h1>
       <div className="item-info__container">
         <div className="item-info__container--left">
-          <p className="item-info__item--author">
+          {/* <p className="item-info__item--author">
             By {props.itemContent.channel}
-          </p>
+          </p> */}
           <p className="item-info__item">
             {new Date(props.itemContent.timestamp).toLocaleDateString("en-US", {
               month: "2-digit",

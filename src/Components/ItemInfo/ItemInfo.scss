@@ -3,6 +3,11 @@
 @use "../../styles/partials/variables" as *;
 
 .item-info {
+  margin: 3.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
   @include tablet {
     margin: 4.25rem;
   }

@@ -168,8 +168,18 @@ function UploadPage() {
                 alt="preview"
               />
             )}
-            <input type="file" accept="image/*" onChange={handleImageChange} />
+            <label className="upload__file-label" htmlFor="file-input">
+              Choose File
+            </label>
+            <input
+              id="file-input"
+              type="file"
+              accept="image/*"
+              onChange={handleImageChange}
+              className="upload__file-input"
+            />{" "}
           </div>
+
           <form onSubmit={handleSubmit} className="upload__form">
             <textarea
               name="title"

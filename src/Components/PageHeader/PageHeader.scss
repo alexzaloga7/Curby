@@ -27,13 +27,13 @@
   }
 }
 
-.header-start {
-  color: black;
+.header-button {
+  color: $secondary-text-color;
   font-weight: 700;
   // position: absolute;
   // top: 20rem;
   // right: 4rem;
-  background-color: #72e350;
+  background-color: $button-background-color;
   width: 10rem;
   text-align: center;
 
@@ -43,8 +43,8 @@
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
-    background-color: #ffffff;
-    color: black;
+    background-color: $background-cta-color;
+    color: $secondary-text-color;
   }
 }
 
@@ -52,7 +52,7 @@
   display: flex;
 }
 
-.logo-image {
+.header-logo {
   width: 9.3rem;
   position: absolute;
   top: 5.5rem;
@@ -85,7 +85,7 @@
   right: 1rem;
   top: 1.5rem;
   font-size: 6rem;
-  color: white;
+  color: $primary-text-color;
   font-weight: 400;
 
   @include tablet {
@@ -100,7 +100,7 @@
   }
 }
 
-.hero-headers__container {
+.hero-copy__container {
   display: flex;
   flex-direction: column;
   padding-top: 14rem;
@@ -111,12 +111,12 @@
   }
 }
 
-.hero__text {
-  color: white;
+.header-copy {
+  color: $primary-text-color;
   width: 20rem;
 }
 
-.hero__subheader {
-  color: white;
+.header-subheader {
+  color: $primary-text-color;
   font-size: 2rem;
 }

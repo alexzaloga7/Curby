@@ -150,7 +150,7 @@ function ItemList({ nextItem }) {
                       className="aside__button"
                       onClick={(event) => handleDelete(item.id, event)}
                     >
-                      Gone
+                      Claimed
                     </button>
                   </div>
                 </div>

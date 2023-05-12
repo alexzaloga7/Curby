@@ -3,7 +3,7 @@
 @use "../../styles/partials/variables" as *;
 
 .footer {
-  background-color: rgb(177, 232, 146);
+  background-color: $background-footer;
   height: 3.5rem;
   position: fixed;
   bottom: 0rem;

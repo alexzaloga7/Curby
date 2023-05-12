@@ -22,7 +22,7 @@ function BurgerBar() {
   }, []);
 
   return (
-    <div className="burger-menu">
+    <div className="menu-container">
       <div
         className={`menu-icon ${isOpen ? "open" : ""}`}
         onClick={handleClick}
