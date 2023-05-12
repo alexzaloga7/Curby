@@ -1,4 +1,4 @@
-import "./LetsGetStarted.scss";
+import "./GetStarted.scss";
 import NavBar from "../../../Components/NavBar/NavBar";
 import PhoneImage from "../../../assets/Icons/Green and White Griddy Big Type General Individuals SDG Instagram Story.svg";
 import LocationImage from "../../../assets/Icons/location.svg";

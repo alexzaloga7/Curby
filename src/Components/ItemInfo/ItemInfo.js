@@ -10,7 +10,7 @@ function ItemInfo(props) {
     // Get the location coordinates from Google Maps API
     const geocoder = new window.google.maps.Geocoder();
     geocoder.geocode(
-      { address: props.videoContent.location },
+      { address: props.itemContent.location },
       (results, status) => {
         if (status === "OK") {
           const lat = results[0].geometry.location.lat();
@@ -23,25 +23,22 @@ function ItemInfo(props) {
         }
       }
     );
-  }, [props.videoContent.location]);
+  }, [props.itemContent.location]);
 
   return (
     <main className="item-info">
-      <h1 className="item-info__header">{props.videoContent.title}</h1>
+      <h1 className="item-info__header">{props.itemContent.title}</h1>
       <div className="item-info__container">
         <div className="item-info__container--left">
           <p className="item-info__item--author">
-            By {props.videoContent.channel}
+            By {props.itemContent.channel}
           </p>
           <p className="item-info__item">
-            {new Date(props.videoContent.timestamp).toLocaleDateString(
-              "en-US",
-              {
-                month: "2-digit",
-                day: "2-digit",
-                year: "numeric",
-              }
-            )}
+            {new Date(props.itemContent.timestamp).toLocaleDateString("en-US", {
+              month: "2-digit",
+              day: "2-digit",
+              year: "numeric",
+            })}
           </p>
           {mapUrl && (
             <iframe
@@ -52,7 +49,7 @@ function ItemInfo(props) {
             />
           )}
           <p className="item-info__item--author">
-            {props.videoContent.location}
+            {props.itemContent.location}
           </p>
         </div>
         <div className="item-info__container--right">
@@ -62,7 +59,7 @@ function ItemInfo(props) {
               src={ViewsAsset}
               alt="views emojii"
             ></img>
-            {props.videoContent.views}
+            {props.itemContent.views}
           </p>
           <p className="item-info__item">
             <img
@@ -70,11 +67,11 @@ function ItemInfo(props) {
               src={LikesAsset}
               alt="likes emojii"
             ></img>
-            {props.videoContent.likes}
+            {props.itemContent.likes}
           </p>
         </div>
       </div>
-      <p className="item-info__copy">{props.videoContent.description}</p>
+      <p className="item-info__copy">{props.itemContent.description}</p>
     </main>
   );
 }

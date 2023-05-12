@@ -1,17 +1,9 @@
 import "./HomePage.scss";
 import "../HomePage/flickity.scss";
-import HeroImage from "../../../assets/Images/matt-hanns-schroeter-YJuyTFWPjZU-unsplash (1).jpg";
-import PhoneImage from "../../../assets/Icons/Green and White Griddy Big Type General Individuals SDG Instagram Story.svg";
-import LocationImage from "../../../assets/Icons/location.svg";
-import UploadImage from "../../../assets/Icons/uploadicon.svg";
-import FindImage from "../../../assets/Icons/Untitled design (6).svg";
+
 import Footer from "../../../Components/Footer/Footer";
-import DesertImage from "../../../assets/Images/camille-villanueva-5IJ9UaT6tLk-unsplash.jpg";
-import GratisImage from "../../../assets/Images/claudio-schwarz-TSgpeJ3yu8g-unsplash.jpg";
-import ChairImage from "../../../assets/Images/weiye-tan-KJnY-3EuT3c-unsplash.jpg";
-import LoveImage from "../../../assets/Images/joshua-coleman-eC1wzAytkCQ-unsplash.jpg";
 import BurgerBar from "../../../Components/BurgerBar/BurgerBar";
-import { Link } from "react-router-dom";
+import Carousel from "../../../Components/Carousel/Carousel";
 
 import PageHeader from "../../../Components/PageHeader/PageHeader";
 
@@ -25,7 +17,7 @@ function HomePage() {
         <h1 className="hero-header">Start your impact</h1>
       </Link> */}
       <BurgerBar />
-      <img
+      {/* <img
         className="hero-image"
         src={GratisImage}
         alt="Toronto Neighbourhood"
@@ -35,7 +27,7 @@ function HomePage() {
         src={ChairImage}
         alt="Toronto Neighbourhood"
       />
-      <img className="hero-image" src={LoveImage} alt="Toronto Neighbourhood" />
+      <img className="hero-image" src={LoveImage} alt="Toronto Neighbourhood" /> */}
       {/* <div className="hero-works">
         <img className="hero-icon" src={PhoneImage} alt="Phone" />
         <div className="hero-text__container">
@@ -82,6 +74,7 @@ function HomePage() {
         <div class="carousel-cell">...</div>
         ...
       </div> */}
+      {/* <Carousel /> */}
       <Footer />
     </div>
   );

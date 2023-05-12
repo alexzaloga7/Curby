@@ -107,7 +107,6 @@ const apiKey = "AIzaSyBaWkdc7IserLCIeVKExv6TutiRwz0pZww";
 
 function GoogleMaps() {
   const [postalCode, setPostalCode] = useState("Toronto");
-  const [map, setMap] = useState(null);
 
   const handleInputChange = (event) => {
     setPostalCode(event.target.value);
@@ -134,14 +133,6 @@ function GoogleMaps() {
             document.getElementById("map"),
             options
           );
-
-          const marker = new google.maps.Marker({
-            position: results[0].geometry.location,
-            map,
-            title: postalCode,
-          });
-
-          setMap(map);
 
           // Wait for the map to finish loading before using the API
           google.maps.event.addListenerOnce(map, "tilesloaded", () => {

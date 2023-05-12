@@ -1,6 +1,5 @@
 import "./PageHeader.scss";
 import { Link } from "react-router-dom";
-import CurbyLogo2 from "../../assets/Logo/curbylogo.svg";
 import RecycleLogo from "../../assets/Logo/recycle2.svg";
 import BurgerBar from "../../Components/BurgerBar/BurgerBar";
 
@@ -20,8 +19,13 @@ function PageHeader() {
         </Link>
       </div>
       <div className="hero-headers__container">
-        <Link to={"/letsgetstarted"}>
-          <h2 className="header-start">Start your impact</h2>
+        <p className="hero__text">
+          Promote circular economy for our planet and community
+        </p>
+
+        <h2 className="hero__subheader">Start your impact</h2>
+        <Link to={"/getstarted"}>
+          <h2 className="header-start">Get Started</h2>
         </Link>
       </div>
     </header>

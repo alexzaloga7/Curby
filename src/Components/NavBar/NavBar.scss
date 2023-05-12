@@ -36,14 +36,14 @@
   top: 4.8rem;
   left: 10.2rem;
   animation: rotation 27s infinite linear;
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
+  // @keyframes rotation {
+  //   from {
+  //     transform: rotate(0deg);
+  //   }
+  //   to {
+  //     transform: rotate(359deg);
+  //   }
+  // }
 
   @include tablet {
     width: 8rem;
@@ -58,6 +58,7 @@
   margin-right: 5rem;
   font-size: 5rem;
   color: white;
+  font-weight: 400;
 
   @include tablet {
     font-size: 7rem;

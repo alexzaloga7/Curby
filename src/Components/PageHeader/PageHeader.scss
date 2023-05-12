@@ -8,42 +8,43 @@
   background-image: url("../../assets/Images/matt-hanns-schroeter-YJuyTFWPjZU-unsplash\ \(1\).jpg");
   background-size: cover;
   background-position: center;
-  height: 54rem;
+  height: 53rem;
   width: 100%;
+  min-width: 25rem;
 
   @include tablet {
     background-size: cover;
     background-position: center;
-    height: 22rem;
+    height: 40rem;
     width: 100%;
   }
 
   @include desktop {
     background-size: cover;
     background-position: center;
-    height: 22rem;
+    height: 42rem;
     width: 100%;
   }
 }
 
 .header-start {
-  color: #000000;
-  font-weight: 600;
-  position: absolute;
-  top: 20rem;
-  right: 4rem;
-  background-color: #ffffff;
+  color: black;
+  font-weight: 700;
+  // position: absolute;
+  // top: 20rem;
+  // right: 4rem;
+  background-color: #72e350;
   width: 10rem;
   text-align: center;
-  margin-left: 5rem;
+
   font-size: 0.6rem;
   border-radius: 10px;
   padding: 0.4rem;
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
-    background-color: #72e350;
-    color: white;
+    background-color: #ffffff;
+    color: black;
   }
 }
 
@@ -52,29 +53,70 @@
 }
 
 .logo-image {
-  width: 7.3rem;
+  width: 9.3rem;
   position: absolute;
-  top: 10.8rem;
-  left: 7.7rem;
-  animation: rotation 27s infinite linear;
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
+  top: 5.5rem;
+  left: 2.12rem;
+  z-index: 0;
+  // animation: rotation 27s infinite linear;
+  // @keyframes rotation {
+  //   from {
+  //     transform: rotate(0deg);
+  //   }
+  //   to {
+  //     transform: rotate(359deg);
+  //   }
+  // }
 
+  @include tablet {
+    top: 4rem;
+    left: 22.6rem;
+  }
   @include desktop {
-    width: 15rem;
+    top: 6.2rem;
+    left: 33rem;
+    width: 10.3rem;
   }
 }
 
 .header-title {
+  z-index: 1;
   position: absolute;
-  left: 9rem;
-  top: 6rem;
+  right: 1rem;
+  top: 1.5rem;
   font-size: 6rem;
   color: white;
+  font-weight: 400;
+
+  @include tablet {
+    left: 25rem;
+    top: 0rem;
+  }
+
+  @include desktop {
+    left: 35rem;
+    top: 0rem;
+    font-size: 8rem;
+  }
+}
+
+.hero-headers__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 14rem;
+  padding-left: 3rem;
+
+  @include tablet {
+    padding-left: 6rem;
+  }
+}
+
+.hero__text {
+  color: white;
+  width: 20rem;
+}
+
+.hero__subheader {
+  color: white;
+  font-size: 2rem;
 }

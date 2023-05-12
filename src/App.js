@@ -1,11 +1,10 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Page/HomePage/HomePage";
-import VideoList from "./Components/VideoList/VideoList";
 import UploadPage from "./pages/Page/UploadPage/UploadPage";
 import GalleryPage from "./pages/Page/GalleryPage/GalleryPage";
 import SingleListing from "./pages/Page/SingleListing/SingleListing";
-import LetsGetStarted from "./pages/Page/LetsGetStarted/LetsGetStarted";
+import GetStarted from "./pages/Page/GetStarted/GetStarted";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
           {/* <Route path="/:id" element={<HomePage />}></Route> */}
           <Route path="/uploads" element={<UploadPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/letsgetstarted" element={<LetsGetStarted />} />
+          <Route path="/getstarted" element={<GetStarted />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -3,7 +3,7 @@ import "./Comments.scss";
 import CommentsAsset from "../../assets/Icons/add_comment.svg";
 
 const Comments = (props) => {
-  const videoContent = props.videoContent;
+  const itemContent = props.itemContent;
 
   return (
     <section className="comments">
@@ -31,7 +31,7 @@ const Comments = (props) => {
           </button>
         </form>
       </div>
-      {videoContent.comments.map((info) => (
+      {itemContent.comments.map((info) => (
         <article key={info.id} className="comments__display">
           <div className="comments__placeholder--container">
             <div className="comments__placeholder" />

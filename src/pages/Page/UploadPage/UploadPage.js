@@ -107,7 +107,7 @@ import GoogleMaps from "../../../Components/GoogleMaps/GoogleMaps";
 import UploadIcon from "../../../assets/Icons/uploadicon.svg";
 
 function UploadPage() {
-  const [videos, setVideos] = useState();
+  const [items, setItems] = useState();
   const [preview, setPreview] = useState(null);
 
   const [image, setImage] = useState(null);
@@ -133,14 +133,14 @@ function UploadPage() {
     formData.append("image", image);
 
     axios
-      .post("http://localhost:3001/videos/", formData)
+      .post("http://localhost:3001/items/", formData)
       .then(() => {
         alert("Uploaded successfully");
         navigate("/gallery");
       })
       .catch((error) => {
         console.error(error);
-        alert("Failed to upload video");
+        alert("Failed to upload item");
       });
   };
 

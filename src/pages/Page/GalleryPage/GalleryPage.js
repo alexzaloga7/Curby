@@ -1,5 +1,5 @@
 import "./GalleryPage.scss";
-import VideoList from "../../../Components/VideoList/VideoList";
+import ItemList from "../../../Components/ItemList/ItemList";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -11,29 +11,29 @@ function GalleryPage() {
 
   const id = params.id || "84e96018-4022-434e-80bf-000ce4cd12b8";
 
-  function useNextVideos(id) {
-    const [nextVideos, setNextVideos] = useState([]);
+  function useNextItems(id) {
+    const [nextItems, setNextItems] = useState([]);
 
     useEffect(() => {
-      const fetchNextVideos = async () => {
-        const { data } = await axios.get(`http://localhost:3001/videos/`);
-        const videoinfo = data.filter((vid) => vid.id !== id);
-        setNextVideos(videoinfo);
-        console.log(videoinfo);
+      const fetchNextItems = async () => {
+        const { data } = await axios.get(`http://localhost:3001/items/`);
+        const iteminfo = data.filter((itm) => itm.id !== id);
+        setNextItems(iteminfo);
+        console.log(iteminfo);
       };
-      fetchNextVideos();
+      fetchNextItems();
     }, [id]);
 
-    return nextVideos;
+    return nextItems;
   }
 
-  const nextVideos = useNextVideos(id);
+  const nextItems = useNextItems(id);
 
   return (
     <div className="GalleryPage">
       <NavBar />
       <aside>
-        <VideoList nextVid={nextVideos} />
+        <ItemList nextItem={nextItems} />
       </aside>
       <Footer />
     </div>
