@@ -103,7 +103,7 @@
 .hero-copy__container {
   display: flex;
   flex-direction: column;
-  padding-top: 14rem;
+
   padding-left: 3rem;
 
   @include tablet {
@@ -119,4 +119,17 @@
 .header-subheader {
   color: $primary-text-color;
   font-size: 2rem;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  padding: 15%;
 }

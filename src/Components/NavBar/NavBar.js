@@ -2,6 +2,7 @@ import "./NavBar.scss";
 import { Link } from "react-router-dom";
 import RecycleLogo from "../../assets/Logo/recycle2.svg";
 import BurgerBar from "../../Components/BurgerBar/BurgerBar";
+import Logo from "../../assets/Logo/Logo.png";
 
 function Navbar() {
   return (
@@ -10,12 +11,7 @@ function Navbar() {
         <BurgerBar />
         <div className="navbar-box">
           <Link to={"/"}>
-            <h1 className="navbar-title">Curby</h1>
-            <img
-              className="navbar-image"
-              src={RecycleLogo}
-              alt="Curby Header Logo"
-            />
+            <img src={Logo} alt="Curby Header Logo" class="logo" />
           </Link>
         </div>
       </div>

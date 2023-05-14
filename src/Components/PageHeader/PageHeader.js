@@ -2,21 +2,24 @@ import "./PageHeader.scss";
 import { Link } from "react-router-dom";
 import RecycleLogo from "../../assets/Logo/recycle2.svg";
 import BurgerBar from "../../Components/BurgerBar/BurgerBar";
+import Logo from "../../assets/Logo/Logo.png";
 
 function PageHeader() {
   return (
     <header className="header">
       <div className="header-container">
         <BurgerBar />
-
-        <Link to={"/"}>
-          <h1 className="header-title">Curby</h1>
+        <div className="logo-container">
+          <Link to={"/"}>
+            {/* <h1 className="header-title">Curby</h1>
           <img
             className="header-logo"
             src={RecycleLogo}
             alt="Curby Header Logo"
-          />
-        </Link>
+          /> */}
+            <img src={Logo} alt="Curby Header Logo" class="logo" />
+          </Link>
+        </div>
       </div>
       <div className="hero-copy__container">
         <p className="header-copy">

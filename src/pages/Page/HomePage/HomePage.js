@@ -4,6 +4,8 @@ import "../HomePage/flickity.scss";
 import Footer from "../../../Components/Footer/Footer";
 import BurgerBar from "../../../Components/BurgerBar/BurgerBar";
 import Carousel from "../../../Components/Carousel/Carousel";
+import LandfillImage from "../../../assets/Images/collab-media-GmqezLxud8g-unsplash.jpg";
+import NeighbourhoodImage from "../../../assets/Images/paul-hanaoka-5Za2sS955yg-unsplash.jpg";
 
 import PageHeader from "../../../Components/PageHeader/PageHeader";
 
@@ -11,7 +13,6 @@ function HomePage() {
   return (
     <div className="App">
       <PageHeader />
-
       {/* <img className="hero-image" src={HeroImage} alt="Toronto Neighbourhood" /> */}
       {/* <Link to={"/letsgetstarted"}>
         <h1 className="hero-header">Start your impact</h1>
@@ -22,11 +23,11 @@ function HomePage() {
         src={GratisImage}
         alt="Toronto Neighbourhood"
       />
-      <img
-        className="hero-image"
-        src={ChairImage}
-        alt="Toronto Neighbourhood"
-      />
+      // <img
+      //   className="hero-image"
+      //   src={ChairImage}
+      //   alt="Toronto Neighbourhood"
+      // />
       <img className="hero-image" src={LoveImage} alt="Toronto Neighbourhood" /> */}
       {/* <div className="hero-works">
         <img className="hero-icon" src={PhoneImage} alt="Phone" />
@@ -74,7 +75,38 @@ function HomePage() {
         <div class="carousel-cell">...</div>
         ...
       </div> */}
-      {/* <Carousel /> */}
+      <Carousel />
+
+      {/* <h2 className="homepage-copy">
+        <span>Over</span>
+        <span>10 </span>
+        <span>million</span>
+        <span>tons</span>
+        <span>of</span>
+        <span>"F-waste"</span>
+        <span>or</span>
+        <span>furniture</span>
+        <span>waste</span>
+        <span>ends</span>
+        <span>up</span>
+        <span>in</span>
+        <span>landfills</span>
+        <span>every</span>
+        <span>year</span>
+        <span> across</span>
+        <span>Canada</span>
+        <span>& USA</span>
+      </h2> */}
+      {/* <img
+        className="hero-image"
+        src={LandfillImage}
+        alt="Toronto Neighbourhood"
+      />
+      <img
+        className="hero-image"
+        src={NeighbourhoodImage}
+        alt="Toronto Neighbourhood"
+      /> */}
       <Footer />
     </div>
   );

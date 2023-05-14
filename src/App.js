@@ -5,6 +5,7 @@ import UploadPage from "./pages/Page/UploadPage/UploadPage";
 import GalleryPage from "./pages/Page/GalleryPage/GalleryPage";
 import SingleListing from "./pages/Page/SingleListing/SingleListing";
 import GetStarted from "./pages/Page/GetStarted/GetStarted";
+import Carousel from "./Components/Carousel/Carousel";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/uploads" element={<UploadPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/getstarted" element={<GetStarted />} />
+          <Route path="/carousel" element={<Carousel />} />
         </Routes>
       </BrowserRouter>
     </div>

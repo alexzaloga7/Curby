@@ -2,13 +2,13 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
 
-.menu-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 60px;
-  margin: 1rem;
-}
+// .menu-container {
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   height: 60px;
+//   margin: 1rem;
+// }
 
 .menu-icon {
   cursor: pointer;
@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 1.1rem;
+  margin: 1rem;
 }
 
 .menu-icon span {
