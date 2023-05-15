@@ -8,13 +8,17 @@ function PageHeader() {
     <header className="header">
       <div className="header-container">
         <BurgerBar />
-        <div className="logo-container">
+        <div className="header-logo__container">
           <Link to={"/"}>
-            <img src={Logo} alt="Curby Header Logo" className="logo" />
+            <img
+              src={Logo}
+              alt="Curby Header Logo"
+              className="header-logo__image"
+            />
           </Link>
         </div>
       </div>
-      <div className="hero-copy__container">
+      <div className="header-copy__container">
         <p className="header-copy">
           Promote circular economy for our planet and community
         </p>

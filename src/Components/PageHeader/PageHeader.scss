@@ -25,111 +25,99 @@
     height: 42rem;
     width: 100%;
   }
-}
 
-.header-button {
-  color: $secondary-text-color;
-  font-weight: 700;
-  // position: absolute;
-  // top: 20rem;
-  // right: 4rem;
-  background-color: $button-background-color;
-  width: 10rem;
-  text-align: center;
-
-  font-size: 0.6rem;
-  border-radius: 10px;
-  padding: 0.4rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  &:hover {
-    background-color: $background-cta-color;
+  &-button {
     color: $secondary-text-color;
-  }
-}
+    font-weight: 700;
+    background-color: $button-background-color;
+    width: 10rem;
+    text-align: center;
 
-.header-container {
-  display: flex;
-}
-
-.header-logo {
-  width: 9.3rem;
-  position: absolute;
-  top: 5.5rem;
-  left: 2.12rem;
-  z-index: 0;
-  // animation: rotation 27s infinite linear;
-  // @keyframes rotation {
-  //   from {
-  //     transform: rotate(0deg);
-  //   }
-  //   to {
-  //     transform: rotate(359deg);
-  //   }
-  // }
-
-  @include tablet {
-    top: 4rem;
-    left: 22.6rem;
-  }
-  @include desktop {
-    top: 6.2rem;
-    left: 33rem;
-    width: 10.3rem;
-  }
-}
-
-.header-title {
-  z-index: 1;
-  position: absolute;
-  right: 1rem;
-  top: 1.5rem;
-  font-size: 6rem;
-  color: $primary-text-color;
-  font-weight: 400;
-
-  @include tablet {
-    left: 25rem;
-    top: 0rem;
+    font-size: 0.6rem;
+    border-radius: 10px;
+    padding: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $background-cta-color;
+      color: $secondary-text-color;
+    }
   }
 
-  @include desktop {
-    left: 35rem;
-    top: 0rem;
-    font-size: 8rem;
+  &-container {
+    display: flex;
   }
-}
 
-.hero-copy__container {
-  display: flex;
-  flex-direction: column;
+  &-logo {
+    width: 9.3rem;
+    position: absolute;
+    top: 5.5rem;
+    left: 2.12rem;
+    z-index: 0;
 
-  padding-left: 3rem;
-
-  @include tablet {
-    padding-left: 6rem;
+    @include tablet {
+      top: 4rem;
+      left: 22.6rem;
+    }
+    @include desktop {
+      top: 6.2rem;
+      left: 33rem;
+      width: 10.3rem;
+    }
   }
-}
 
-.header-copy {
-  color: $primary-text-color;
-  width: 20rem;
-}
+  &-title {
+    z-index: 1;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    font-size: 6rem;
+    color: $primary-text-color;
+    font-weight: 400;
 
-.header-subheader {
-  color: $primary-text-color;
-  font-size: 2rem;
-}
+    @include tablet {
+      left: 25rem;
+      top: 0rem;
+    }
 
-.logo-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
+    @include desktop {
+      left: 35rem;
+      top: 0rem;
+      font-size: 8rem;
+    }
+  }
 
-.logo {
-  max-width: 100%;
-  height: auto;
-  padding: 15%;
+  &-copy__container {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 3rem;
+
+    @include tablet {
+      padding-left: 6rem;
+    }
+  }
+
+  &-copy {
+    color: $primary-text-color;
+    width: 20rem;
+  }
+
+  &-subheader {
+    color: $primary-text-color;
+    font-size: 2rem;
+  }
+
+  &-logo__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  &-logo__image {
+    max-width: 100%;
+    height: auto;
+    padding: 15%;
+  }
 }
