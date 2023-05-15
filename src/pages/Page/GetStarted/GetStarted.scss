@@ -2,75 +2,77 @@
 @use "../../../styles/partials/typography" as *;
 @use "../../../styles/partials/variables" as *;
 
-.hero-works {
-  border: solid 1px rgb(215, 214, 214);
-  box-shadow: 5px 5px 5px rgb(210, 210, 210);
-  border-radius: 1rem;
-  height: rem;
-  margin: 1rem;
-  margin-bottom: 5rem;
-  display: flex;
-  align-items: center;
-  transition: transform 0.2s;
-  cursor: pointer;
+.hero {
+  margin: 0rem;
 
-  @include tablet {
-    width: 19rem;
-    height: 16rem;
-  }
-}
-
-.hero-works:hover {
-  transform: scale(
-    1.1
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-.hero-subheader {
-  text-align: center;
-  font-size: 1rem;
-}
-
-.hero-icon {
-  width: 3rem;
-  max-height: 3rem;
-  margin: 1rem;
-}
-
-.hero-button__container {
-  display: flex;
-  justify-content: space-around;
-  margin: 2rem;
-}
-
-.hero-button {
-  background-color: #04aa6d;
-  width: 9rem;
-  height: 4.5rem;
-  border-radius: 5%;
-}
-
-.hero-button__text {
-  width: 9rem;
-
-  text-align: center;
-  color: white;
-}
-
-.hero-text__container {
-  display: flex;
-
-  @include tablet {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-.hero-container {
-  margin-top: 4rem;
-
-  @include tablet {
+  &-works {
+    border: solid 1px rgb(215, 214, 214);
+    box-shadow: 5px 5px 5px rgb(210, 210, 210);
+    border-radius: 1rem;
+    height: rem;
+    margin: 1rem;
+    margin-bottom: 5rem;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+
+    @include tablet {
+      width: 19rem;
+      height: 16rem;
+    }
+  }
+
+  &-works:hover {
+    transform: scale(1.1);
+  }
+  &-subheader {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  &-icon {
+    width: 3rem;
+    max-height: 3rem;
+    margin: 1rem;
+  }
+
+  &-button__container {
+    display: flex;
     justify-content: space-around;
+    margin: 2rem;
+  }
+
+  &-button {
+    background-color: #04aa6d;
+    width: 9rem;
+    height: 4.5rem;
+    border-radius: 5%;
+  }
+
+  &-button__text {
+    width: 9rem;
+
+    text-align: center;
+    color: white;
+  }
+
+  &-text__container {
+    display: flex;
+
+    @include tablet {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &-container {
+    margin-top: 4rem;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 }

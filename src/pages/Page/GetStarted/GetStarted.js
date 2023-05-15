@@ -6,9 +6,9 @@ import UploadImage from "../../../assets/Icons/uploadicon.svg";
 import FindImage from "../../../assets/Icons/Untitled design (6).svg";
 import Footer from "../../../Components/Footer/Footer";
 
-function LetsGetStarted() {
+function GetStarted() {
   return (
-    <div className="LetsGetStarted">
+    <div className="hero">
       <NavBar />
       <section className="hero-container">
         <div className="hero-works">
@@ -50,4 +50,4 @@ function LetsGetStarted() {
   );
 }
 
-export default LetsGetStarted;
+export default GetStarted;
