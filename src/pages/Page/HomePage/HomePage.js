@@ -4,9 +4,6 @@ import "../HomePage/flickity.scss";
 import Footer from "../../../Components/Footer/Footer";
 import BurgerBar from "../../../Components/BurgerBar/BurgerBar";
 import Carousel from "../../../Components/Carousel/Carousel";
-import LandfillImage from "../../../assets/Images/collab-media-GmqezLxud8g-unsplash.jpg";
-import NeighbourhoodImage from "../../../assets/Images/paul-hanaoka-5Za2sS955yg-unsplash.jpg";
-
 import PageHeader from "../../../Components/PageHeader/PageHeader";
 
 function HomePage() {

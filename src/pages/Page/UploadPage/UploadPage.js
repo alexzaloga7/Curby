@@ -101,13 +101,12 @@ import "./UploadPage.scss";
 import NavBar from "../../../Components/NavBar/NavBar";
 import Footer from "../../../Components/Footer/Footer";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import GoogleMaps from "../../../Components/GoogleMaps/GoogleMaps";
 import UploadIcon from "../../../assets/Icons/uploadicon.svg";
 
 function UploadPage() {
-  const [items, setItems] = useState();
   const [preview, setPreview] = useState(null);
 
   const [image, setImage] = useState(null);
@@ -198,7 +197,7 @@ function UploadPage() {
               className="upload__id"
               placeholder="Location"
             ></textarea>
-            <GoogleMaps />
+            {/* <GoogleMaps /> */}
 
             <div className="upload__button--container">
               <button type="submit" className="upload__button">

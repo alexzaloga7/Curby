@@ -1,6 +1,5 @@
 import "./PageHeader.scss";
 import { Link } from "react-router-dom";
-import RecycleLogo from "../../assets/Logo/recycle2.svg";
 import BurgerBar from "../../Components/BurgerBar/BurgerBar";
 import Logo from "../../assets/Logo/Logo.png";
 
@@ -17,7 +16,7 @@ function PageHeader() {
             src={RecycleLogo}
             alt="Curby Header Logo"
           /> */}
-            <img src={Logo} alt="Curby Header Logo" class="logo" />
+            <img src={Logo} alt="Curby Header Logo" className="logo" />
           </Link>
         </div>
       </div>

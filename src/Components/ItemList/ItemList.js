@@ -169,10 +169,8 @@
 
 import "./ItemList.scss";
 import { Link } from "react-router-dom";
-import LikesAsset from "../../assets/Icons/likes.svg";
 import React, { useState, useEffect } from "react";
 import Heart from "react-animated-heart";
-import axios from "axios";
 
 function ItemList({ nextItem }) {
   const [likedItems, setLikedItems] = useState({});

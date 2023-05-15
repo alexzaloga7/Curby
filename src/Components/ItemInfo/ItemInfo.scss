@@ -3,13 +3,17 @@
 @use "../../styles/partials/variables" as *;
 
 .item-info {
-  margin: 3.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  margin: 2.25rem;
+  // display: flex;
+  // flex-direction: column;
+
+  // align-items: center;
 
   @include tablet {
     margin: 4.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   @include desktop {
@@ -19,11 +23,11 @@
   }
 
   &__header {
-    font-size: 1.5rem;
-
-    padding: 1rem 0rem;
-    font-weight: 700;
+    font-size: 2rem;
+    // border: 1px solid grey;
+    font-weight: 400;
     margin: 1rem;
+    text-align: center;
 
     @include tablet {
       border: none;
@@ -31,11 +35,16 @@
     }
   }
 
+  &__description {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-left: 1rem;
+  }
+
   &__container {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid $divider-color;
-    padding-bottom: 1rem;
+    justify-content: center;
 
     @include tablet {
       display: flex;
@@ -67,12 +76,12 @@
 
   &__item--author {
     padding: 0rem 1rem;
-    font-weight: 700;
+    font-weight: 400;
   }
 
   &__item {
     padding: 0rem 1rem;
-    color: $label-text-color;
+    font-size: 1.1rem;
     font-weight: 400;
   }
 
@@ -81,5 +90,70 @@
     line-height: 1.8rem;
     color: $primary-text-color;
     margin: 1rem;
+  }
+}
+
+.item-info__map {
+  width: 100%;
+  height: 25rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40rem;
+    width: 40rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+  }
+}
+
+.single-item {
+  display: flex;
+  margin: 0rem;
+  width: 100%;
+  height: 20rem;
+  padding-top: 1rem;
+  justify-content: center;
+
+  @include tablet {
+    justify-content: center;
+    background-color: $brainflix-primary-black;
+    z-index: 0;
+  }
+
+  &__image {
+    max-width: 20rem;
+    height: 20rem;
+    border-radius: 10%;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+    max-height: 40rem;
+    padding: 0rem, 56.25%;
+  }
+}
+
+.item-info__icon {
+  width: 3rem;
+  cursor: pointer;
+
+  margin-top: 4rem;
+}
+
+.item-info__iconcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tablet-container {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 7rem;
   }
 }
