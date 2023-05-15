@@ -100,6 +100,10 @@
   border-radius: 2rem;
 
   @include tablet {
+    margin-top: 10rem;
+  }
+
+  @include desktop {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

@@ -8,6 +8,7 @@ import Time2Icon from "../../assets/Icons/time2.svg";
 
 function ItemInfo(props) {
   const [mapUrl, setMapUrl] = useState("");
+  const [timeAgo, setTimeAgo] = useState("");
 
   useEffect(() => {
     // Get the location coordinates from Google Maps API
@@ -26,7 +27,20 @@ function ItemInfo(props) {
         }
       }
     );
-  }, [props.itemContent.location]);
+
+    // Calculate time ago
+    const now = new Date().getTime();
+    const timestamp = new Date(props.itemContent.timestamp).getTime();
+    const difference = now - timestamp;
+
+    if (difference < 60 * 60 * 1000) {
+      const minutesAgo = Math.floor(difference / (60 * 1000));
+      setTimeAgo(`${minutesAgo} minute${minutesAgo !== 1 ? "s" : ""} ago`);
+    } else {
+      const hoursAgo = Math.floor(difference / (60 * 60 * 1000));
+      setTimeAgo(`${hoursAgo} hour${hoursAgo !== 1 ? "s" : ""} ago`);
+    }
+  }, [props.itemContent.location, props.itemContent.timestamp]);
 
   return (
     <main className="item-info">
@@ -64,16 +78,7 @@ function ItemInfo(props) {
               {props.itemContent.description}
             </h2>
 
-            <h2 className="item-info__item">
-              {new Date(props.itemContent.timestamp).toLocaleDateString(
-                "en-US",
-                {
-                  month: "2-digit",
-                  day: "2-digit",
-                  year: "numeric",
-                }
-              )}
-            </h2>
+            <h2 className="item-info__item">{timeAgo}</h2>
 
             <p className="item-info__item--author">
               {props.itemContent.location}
@@ -83,10 +88,6 @@ function ItemInfo(props) {
       </div>
 
       <div className="item-info__container--map">
-        {/* <p className="item-info__item--author">
-            By {props.itemContent.channel}
-          </p> */}
-
         {mapUrl && (
           <iframe
             title="Map Preview"
@@ -96,24 +97,6 @@ function ItemInfo(props) {
           />
         )}
       </div>
-      {/* <div className="item-info__container--right">
-          <p className="item-info__item">
-            <img
-              className="item-info__icons"
-              src={ViewsAsset}
-              alt="views emojii"
-            ></img>
-            {props.itemContent.views}
-          </p>
-          <p className="item-info__item">
-            <img
-              className="item-info__icons"
-              src={LikesAsset}
-              alt="likes emojii"
-            ></img>
-            {props.itemContent.likes}
-          </p>
-        </div> */}
     </main>
   );
 }

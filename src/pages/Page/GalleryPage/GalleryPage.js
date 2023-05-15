@@ -5,6 +5,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import NavBar from "../../../Components/NavBar/NavBar";
 import Footer from "../../../Components/Footer/Footer";
+import ItemsCarousel from "../../../Components/Items-Carousel/Items-Carousel";
 
 function GalleryPage() {
   const params = useParams();
@@ -35,6 +36,9 @@ function GalleryPage() {
       <aside>
         <ItemList nextItem={nextItems} />
       </aside>
+      <div className="itemscarousel">
+        <ItemsCarousel nextItem={nextItems} />
+      </div>
       <Footer />
     </div>
   );

@@ -30,20 +30,20 @@ function BurgerBar() {
         <span></span>
         <span></span>
         <span></span>
+        <nav className={`menu ${isOpen ? "open" : ""}`}>
+          <ul>
+            <li>
+              <Link to={"/"}>Home</Link>
+            </li>
+            <li>
+              <Link to={"/gallery"}>Gallery</Link>
+            </li>
+            <li>
+              <Link to={"/uploads"}>Upload</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav className={`menu ${isOpen ? "open" : ""}`}>
-        <ul>
-          <li>
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link to={"/gallery"}>Gallery</Link>
-          </li>
-          <li>
-            <Link to={"/uploads"}>Upload</Link>
-          </li>
-        </ul>
-      </nav>
     </div>
   );
 }

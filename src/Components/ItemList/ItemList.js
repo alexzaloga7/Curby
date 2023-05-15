@@ -171,6 +171,7 @@ import "./ItemList.scss";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import Heart from "react-animated-heart";
+import ItemsCarousel from "../Items-Carousel/Items-Carousel";
 
 function ItemList({ nextItem }) {
   const [likedItems, setLikedItems] = useState({});
@@ -220,6 +221,7 @@ function ItemList({ nextItem }) {
   return (
     <div>
       <aside className={`aside ${asideBackground}`}>
+        {/* <ItemsCarousel /> */}
         {filteredNextItem.map((item) => (
           <Link key={item.id} to={`/${item.id}`} className="aside__link">
             <div key={item.id} className="aside__box">
@@ -245,7 +247,7 @@ function ItemList({ nextItem }) {
                         event.preventDefault();
                         handleLike(item.id);
                       }}
-                      isclick={likedItems[item.id]}
+                      // isclick={likedItems[item.id]}
                     />
 
                     <button

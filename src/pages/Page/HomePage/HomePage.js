@@ -9,12 +9,13 @@ import PageHeader from "../../../Components/PageHeader/PageHeader";
 function HomePage() {
   return (
     <div className="App">
+      {/* <BurgerBar /> */}
       <PageHeader />
       {/* <img className="hero-image" src={HeroImage} alt="Toronto Neighbourhood" /> */}
       {/* <Link to={"/letsgetstarted"}>
         <h1 className="hero-header">Start your impact</h1>
       </Link> */}
-      <BurgerBar />
+
       {/* <img
         className="hero-image"
         src={GratisImage}

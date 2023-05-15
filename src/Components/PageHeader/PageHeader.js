@@ -10,12 +10,6 @@ function PageHeader() {
         <BurgerBar />
         <div className="logo-container">
           <Link to={"/"}>
-            {/* <h1 className="header-title">Curby</h1>
-          <img
-            className="header-logo"
-            src={RecycleLogo}
-            alt="Curby Header Logo"
-          /> */}
             <img src={Logo} alt="Curby Header Logo" className="logo" />
           </Link>
         </div>

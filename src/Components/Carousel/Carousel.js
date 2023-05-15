@@ -4,10 +4,14 @@ import { Link } from "react-router-dom";
 import "./Carousel.scss";
 import Flickity from "flickity";
 import "flickity/css/flickity.css";
+import CurbyBackgroundImage from "../../assets/Images/matt-hanns-schroeter-YJuyTFWPjZU-unsplash (1).jpg";
 import LandfillImage from "../../assets/Images/collab-media-GmqezLxud8g-unsplash.jpg";
 import NeighbourhoodImage from "../../assets/Images/paul-hanaoka-5Za2sS955yg-unsplash.jpg";
 import chairs from "../../assets/Images/chairs.jpg";
 import street from "../../assets/Images/tyler-gooding-L1dYYpcdP50-unsplash.jpg";
+import Logo from "../../assets/Logo/Logo.png";
+import NarrowBackgroundImage from "../../assets/Images/narrowbackgroundimage.png";
+import BurgerBar from "../../Components/BurgerBar/BurgerBar";
 
 class Carousel extends Component {
   constructor(props) {
@@ -33,11 +37,33 @@ class Carousel extends Component {
     return (
       <div className="carousel" ref={this.carouselRef}>
         <div className="carousel-cell">
+          <div className="header-container">
+            <BurgerBar />
+
+            <div className="logo-container">
+              <Link to={"/"}>
+                <img src={Logo} alt="Curby Header Logo" className="logo" />
+              </Link>
+            </div>
+          </div>
+          <div className="hero-copy__container">
+            <p className="header-copy">
+              Promote circular economy for our planet and community
+            </p>
+
+            <h2 className="header-subheader">Start your impact</h2>
+            <Link to={"/getstarted"}>
+              <h2 className="header-button">Get Started</h2>
+            </Link>
+          </div>
+        </div>
+        <div className="carousel-cell">
           <img
             className="carousel-image"
             src={NeighbourhoodImage}
-            alt="slide1"
+            alt="slide2"
           />
+
           <h2 className="homepage-copy">
             <span>Welcome</span> <span>to</span> <span>Curby -</span>
             <span>the</span> <span>app</span> <span>that</span>
@@ -47,7 +73,7 @@ class Carousel extends Component {
           </h2>
         </div>
         <div className="carousel-cell">
-          <img className="carousel-image" src={LandfillImage} alt="slide2" />
+          <img className="carousel-image" src={LandfillImage} alt="slide3" />
           <h2 className="homepage-copy">
             <span>Did</span> <span>you</span> <span>know</span>
             <span>that</span> <span>many</span> <span>everyday</span>
@@ -71,7 +97,7 @@ class Carousel extends Component {
           </h2>
         </div>
         <div className="carousel-cell">
-          <img className="carousel-image" src={chairs} alt="slide3" />
+          <img className="carousel-image" src={chairs} alt="slide4" />
           <h2 className="homepage-copy">
             <span>Curby</span> <span>is</span> <span>all</span>
             <span>about</span> <span>promoting</span>
@@ -100,7 +126,7 @@ class Carousel extends Component {
           </h2>
         </div>
         <div className="carousel-cell">
-          <img className="carousel-image" src={street} alt="slide3" />
+          <img className="carousel-image" src={street} alt="slide5" />
           <h2 className="homepage-copy">
             <span>Join</span> <span>the</span> <span>Curby</span>
             <span>community</span> <span>today</span> <span>and</span>
