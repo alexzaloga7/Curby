@@ -25,43 +25,8 @@
     width: 100%;
   }
 
-  &-image {
-    width: 6.3rem;
-    position: absolute;
-    top: 4.8rem;
-    left: 10.2rem;
-    animation: rotation 27s infinite linear;
-    // @keyframes rotation {
-    //   from {
-    //     transform: rotate(0deg);
-    //   }
-    //   to {
-    //     transform: rotate(359deg);
-    //   }
-    // }
-
-    @include tablet {
-      width: 8rem;
-      position: absolute;
-      top: 7.1rem;
-      left: 22.2rem;
-    }
-  }
-
   &-container {
     display: flex;
-  }
-
-  &-title {
-    position: absolute;
-    margin-right: 5rem;
-    font-size: 5rem;
-    color: $primary-text-color;
-    font-weight: 400;
-
-    @include tablet {
-      font-size: 7rem;
-    }
   }
 
   &-box {

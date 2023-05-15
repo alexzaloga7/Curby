@@ -14,11 +14,6 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      {/* <div className="navbar-headers__container">
-        <Link to={"/letsgetstarted"}>
-          <h2 className="navbar-start">Start your impact</h2>
-        </Link>
-      </div> */}
     </nav>
   );
 }
