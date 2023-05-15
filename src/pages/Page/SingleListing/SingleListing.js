@@ -58,12 +58,12 @@ function SingleListing() {
   return (
     <div className="SingleListing">
       <NavBar />
-      <section>
+      <section className="single-listing">
         <ItemInfo itemContent={itemContent} />
-        <div className="button__container">
-          <button className="delete__button" onClick={handleDelete}>
+        <div className="single-listing__container">
+          <button className="single-listing__button" onClick={handleDelete}>
             <img
-              className="delete-icon"
+              className="single-listing-icon"
               src={DeleteIcon}
               alt="delete button"
             ></img>
