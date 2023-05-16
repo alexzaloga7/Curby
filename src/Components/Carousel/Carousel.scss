@@ -76,12 +76,12 @@
 }
 
 .homepage-copy {
-  transform: scale(0.94);
-  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  /* transform: scale(0.94); */
+  /* animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1); */
   position: absolute;
   top: 0rem;
   color: white;
-  left: 46px;
+  left: 21px;
 
   @include tablet {
     text-align: left;

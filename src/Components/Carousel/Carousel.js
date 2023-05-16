@@ -6,11 +6,12 @@ import "flickity/css/flickity.css";
 import CurbyBackgroundImage from "../../assets/Images/matt-hanns-schroeter-YJuyTFWPjZU-unsplash (1).jpg";
 import LandfillImage from "../../assets/Images/collab-media-GmqezLxud8g-unsplash.jpg";
 import NeighbourhoodImage from "../../assets/Images/paul-hanaoka-5Za2sS955yg-unsplash.jpg";
-import chairs from "../../assets/Images/chairs.jpg";
+import Community from "../../assets/Images/etienne-girardet-RuMqg2cs-M0-unsplash.jpg";
 import street from "../../assets/Images/tyler-gooding-L1dYYpcdP50-unsplash.jpg";
 import Logo from "../../assets/Logo/Logo.png";
 import BurgerBar from "../../Components/BurgerBar/BurgerBar";
 import Garbage from "../../assets/Images/jilbert-ebrahimi-b0p818k8Ok8-unsplash.jpg";
+import Join from "../../assets/Images/egor-myznik-tSAs_VU_6Ds-unsplash.jpg";
 
 class Carousel extends Component {
   constructor(props) {
@@ -94,7 +95,7 @@ class Carousel extends Component {
         </div>
 
         <div className="carousel-cell">
-          <img className="carousel-image" src={chairs} alt="slide4" />
+          <img className="carousel-image" src={Community} alt="slide4" />
           <h2 className="homepage-copy__two">
             <span>
               Curby is all about promoting sustainability and helping people
@@ -109,7 +110,7 @@ class Carousel extends Component {
         </div>
 
         <div className="carousel-cell">
-          <img className="carousel-image" src={street} alt="slide5" />
+          <img className="carousel-image" src={Join} alt="slide5" />
           <h2 className="homepage-copy">
             <span>Join</span> <span>the</span> <span>Curby</span>
             <span>community</span> <span>today</span> <span>and</span>
