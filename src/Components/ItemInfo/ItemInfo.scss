@@ -4,10 +4,6 @@
 
 .item-info {
   margin: 2.25rem;
-  // display: flex;
-  // flex-direction: column;
-
-  // align-items: center;
 
   @include tablet {
     margin: 4.25rem;
@@ -24,7 +20,6 @@
 
   &__header {
     font-size: 2rem;
-    // border: 1px solid grey;
     font-weight: 400;
     margin: 1rem;
     text-align: center;
@@ -51,30 +46,7 @@
       justify-content: space-between;
     }
   }
-
-  &__icons {
-    margin-right: 1rem;
-  }
-
-  &__container--left {
-    @include tablet {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-
-  &__container--right {
-    margin-right: 2rem;
-
-    @include tablet {
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      right: 0rem;
-    }
-  }
-
-  &__item--author {
+  &__location {
     padding: 0rem 1rem;
     font-weight: 400;
   }
@@ -85,48 +57,56 @@
     font-weight: 400;
   }
 
-  &__copy {
-    font-size: 0.87rem;
-    line-height: 1.8rem;
-    color: $primary-text-color;
-    margin: 1rem;
+  &__map {
+    width: 100%;
+    height: 25rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+
+    @include tablet {
+      margin-top: 10rem;
+    }
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 40rem;
+      width: 40rem;
+      margin-right: 4rem;
+      margin-top: 1rem;
+    }
   }
-}
 
-.item-info__map {
-  width: 100%;
-  height: 25rem;
-  margin-top: 1rem;
-  border-radius: 2rem;
+  &__icon {
+    width: 3rem;
+    cursor: pointer;
 
-  @include tablet {
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
 
-  @include desktop {
+  &__iconcontainer {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 40rem;
-    width: 40rem;
-    margin-right: 4rem;
-    margin-top: 1rem;
+    justify-content: space-between;
+  }
+
+  &__tablet {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-right: 7rem;
+    }
   }
 }
 
 .single-item {
   display: flex;
   margin: 0rem;
-  width: 100%;
-  height: 20rem;
+
   padding-top: 1rem;
   justify-content: center;
-
-  @include tablet {
-    justify-content: center;
-    background-color: $brainflix-primary-black;
-    z-index: 0;
-  }
 
   &__image {
     max-width: 20rem;
@@ -137,27 +117,5 @@
     z-index: 1;
     max-height: 40rem;
     padding: 0rem, 56.25%;
-  }
-}
-
-.item-info__icon {
-  width: 3rem;
-  cursor: pointer;
-
-  margin-top: 4rem;
-}
-
-.item-info__iconcontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.tablet-container {
-  @include tablet {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-right: 7rem;
   }
 }

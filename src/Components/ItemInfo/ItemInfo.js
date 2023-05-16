@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./ItemInfo.scss";
-import ViewsAsset from "../../assets/Icons/views.svg";
-import LikesAsset from "../../assets/Icons/likes.svg";
 import DescriptionIcon from "../../assets/Icons/description.svg";
-import LocationredIcon from "../../assets/Icons/locationred.svg";
-import Time2Icon from "../../assets/Icons/time2.svg";
+import LocationPinIcon from "../../assets/Icons/locationred.svg";
+import ClockIcon from "../../assets/Icons/clock.svg";
 
 function ItemInfo(props) {
   const [mapUrl, setMapUrl] = useState("");
@@ -28,7 +26,7 @@ function ItemInfo(props) {
       }
     );
 
-    // Calculate time ago
+    // Calculate time since upload, if under an hour count minutes
     const now = new Date().getTime();
     const timestamp = new Date(props.itemContent.timestamp).getTime();
     const difference = now - timestamp;
@@ -44,7 +42,7 @@ function ItemInfo(props) {
 
   return (
     <main className="item-info">
-      <div className="tablet-container">
+      <div className="item-info__tablet">
         <h2 className="item-info__header">{props.itemContent.title}</h2>
         <div className="single-item">
           <img
@@ -63,12 +61,12 @@ function ItemInfo(props) {
             ></img>
             <img
               className="item-info__icon"
-              src={Time2Icon}
+              src={ClockIcon}
               alt="description icon"
             ></img>
             <img
               className="item-info__icon"
-              src={LocationredIcon}
+              src={LocationPinIcon}
               alt="description icon"
             ></img>
           </div>
@@ -77,17 +75,13 @@ function ItemInfo(props) {
             <h2 className="item-info__description">
               {props.itemContent.description}
             </h2>
-
             <h2 className="item-info__item">{timeAgo}</h2>
-
-            <p className="item-info__item--author">
-              {props.itemContent.location}
-            </p>
+            <p className="item-info__location">{props.itemContent.location}</p>
           </div>
         </div>
       </div>
 
-      <div className="item-info__container--map">
+      <div className="item-info__containermap">
         {mapUrl && (
           <iframe
             title="Map Preview"
