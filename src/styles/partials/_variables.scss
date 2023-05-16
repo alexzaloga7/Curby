@@ -5,20 +5,30 @@ $primary-cta-color: #72e350;
 $label-text-color: #afafaf;
 $background-cta-color: #ffffff;
 $background-footer: rgb(177, 232, 146);
-$navbar-hover: #3dff74;
-$navbar-background: #ffffff35;
-$primary-background-color: #ffffff;
+
+// $primary-background-color: #ffffff;
 
 $listing-outline: rgb(134, 234, 177);
 
 // Secondary Colors
 
-$brainflix-primary-black: #ffffff;
-$cta-hover-color: #0065ad;
-$divider-color: #e1e1e1;
 $primary-background-color: #ffffff;
 $secondary-text-color: rgb(0, 0, 0);
 $button-background-color: #72e350;
+
+// NavBar
+
+$navbar-hover: #3dff74;
+$burgerbar-background: #ffffff35;
+
+// Gallery
+$gallery-boxshadow: rgb(210, 210, 210);
+$gallery-border: rgb(213, 211, 211);
+
+// Upload
+$upload-border: #dedede;
+$upload-color: rgb(56, 173, 13);
+$upload-file: #f1f1f1;
 
 // Media Queries
 

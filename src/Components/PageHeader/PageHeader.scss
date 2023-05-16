@@ -39,7 +39,7 @@
     cursor: pointer;
     transition: all 0.3s;
     &:hover {
-      background-color: $background-cta-color;
+      background-color: $primary-background-color;
       color: $secondary-text-color;
     }
   }

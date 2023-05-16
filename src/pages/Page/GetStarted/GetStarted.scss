@@ -43,18 +43,11 @@
     margin: 2rem;
   }
 
-  &-button {
-    background-color: #04aa6d;
-    width: 9rem;
-    height: 4.5rem;
-    border-radius: 5%;
-  }
-
   &-button__text {
     width: 9rem;
 
     text-align: center;
-    color: white;
+    color: $primary-text-color;
   }
 
   &-text__container {

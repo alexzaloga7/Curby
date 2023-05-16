@@ -1,8 +1,12 @@
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/typography" as *;
+@use "../../../styles/partials/variables" as *;
+
 .single-listing {
   padding-bottom: 5rem;
 
   &__button {
-    background-color: white;
+    background-color: $primary-background-color;
     border-radius: 5rem;
     border: none;
   }
