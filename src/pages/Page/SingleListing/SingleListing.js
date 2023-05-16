@@ -49,6 +49,7 @@ function SingleListing() {
   const handleDelete = async () => {
     await axios.delete(`http://localhost:3001/items/${id}`);
     navigate("/gallery"); // navigate to gallery page after delete
+    window.alert("Item successfully deleted");
   };
 
   if (!itemContent || nextItems.length === 0) {
