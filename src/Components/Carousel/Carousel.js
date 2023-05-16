@@ -1,6 +1,5 @@
 import React, { Component, createRef } from "react";
 import { Link } from "react-router-dom";
-
 import "./Carousel.scss";
 import Flickity from "flickity";
 import "flickity/css/flickity.css";
@@ -10,8 +9,8 @@ import NeighbourhoodImage from "../../assets/Images/paul-hanaoka-5Za2sS955yg-uns
 import chairs from "../../assets/Images/chairs.jpg";
 import street from "../../assets/Images/tyler-gooding-L1dYYpcdP50-unsplash.jpg";
 import Logo from "../../assets/Logo/Logo.png";
-import NarrowBackgroundImage from "../../assets/Images/narrowbackgroundimage.png";
 import BurgerBar from "../../Components/BurgerBar/BurgerBar";
+import Garbage from "../../assets/Images/jilbert-ebrahimi-b0p818k8Ok8-unsplash.jpg";
 
 class Carousel extends Component {
   constructor(props) {
@@ -37,94 +36,78 @@ class Carousel extends Component {
     return (
       <div className="carousel" ref={this.carouselRef}>
         <div className="carousel-cell">
-          <div className="header-container">
-            <BurgerBar />
-
-            <div className="logo-container">
-              <Link to={"/"}>
-                <img src={Logo} alt="Curby Header Logo" className="logo" />
-              </Link>
-            </div>
-          </div>
-          <div className="hero-copy__container">
-            <p className="header-copy">
-              Promote circular economy for our planet and community
-            </p>
-
-            <h2 className="header-subheader">Start your impact</h2>
-            <Link to={"/getstarted"}>
-              <h2 className="header-button">Get Started</h2>
-            </Link>
-          </div>
-        </div>
-        <div className="carousel-cell">
           <img
             className="carousel-image"
-            src={NeighbourhoodImage}
-            alt="slide2"
+            src={CurbyBackgroundImage}
+            alt="slide1"
           />
 
           <h2 className="homepage-copy">
-            <span>Welcome</span> <span>to</span> <span>Curby -</span>
-            <span>the</span> <span>app</span> <span>that</span>
-            <span>helps</span> <span>you</span> <span>discover</span>
-            <span>free</span> <span>treasures</span> <span>in</span>
-            <span>your</span> <span>neighborhood!</span>
+            <BurgerBar />
+            <div className="logo-container">
+              <Link to={"/"}>
+                <img src={Logo} alt="Curby Header Logo" className="logos" />
+              </Link>
+            </div>
+            <div className="header-copy__container">
+              <p className="header-copy">
+                Promote circular economy for our planet and community
+              </p>
+
+              <h2 className="header-subheader">Start your impact</h2>
+              <Link to={"/getstarted"}>
+                <h2 className="header-button">Get Started</h2>
+              </Link>
+            </div>
+          </h2>
+        </div>
+
+        <div className="carousel-cell">
+          <img className="carousel-image" src={street} alt="slide2" />
+
+          <h2 className="homepage-copy__two">
+            <span>
+              Welcome to Curby - the app that helps you discover free treasures
+              in your neighbourhood! Did you know that many everyday items get
+              thrown away every day, even though they're still in great
+              condition? That's where Curby comes in. Our app lets the community
+              share free items spotted on the curb in their local neighborhood,
+              so that others can give them a new lease of life!
+            </span>
           </h2>
         </div>
         <div className="carousel-cell">
-          <img className="carousel-image" src={LandfillImage} alt="slide3" />
-          <h2 className="homepage-copy">
-            <span>Did</span> <span>you</span> <span>know</span>
-            <span>that</span> <span>many</span> <span>everyday</span>
-            <span>items</span> <span>get</span> <span>thrown</span>
-            <span>away</span> <span>every</span> <span>day,</span>
-            <span>even</span> <span>though</span> <span>they're</span>
-            <span>still</span> <span>in</span> <span>great</span>
-            <span>condition?</span>
-            <span>That's</span> <span>where</span> <span>Curby</span>
-            <span>comes</span> <span>in.</span> <span>Our</span>
-            <span>app</span> <span>lets</span> <span>users</span>
-            <span>share</span> <span>details</span> <span>of</span>
-            <span>free</span> <span>items</span> <span>they</span>
-            <span>spot</span> <span>on</span> <span>the</span> <span>curb</span>
-            <span>or</span> <span>stoop</span> <span>in</span>
-            <span>their</span> <span>neighborhood,</span>
-            <span>so</span>
-            <span>that</span> <span>others</span> <span>can</span>
-            <span>give</span> <span>them</span> <span>a</span> <span>new</span>
-            <span>lease</span> <span>of</span> <span>life.</span>
+          <img className="carousel-image" src={Garbage} alt="slide3" />
+          <h2 className="homepage-copy__two">
+            <span>
+              Canadian landfill sites are filled with millions of tonnes of
+              furniture, appliances, and other durable goods each year. To
+              address this growing issue and promote sustainability, Curby
+              brings an excellent solution. By encouraging people to reuse and
+              flip items that would otherwise end up in landfills, Curby is
+              helping to reduce waste and protect the planet.With the increasing
+              costs of essential goods and services outpacing income growth for
+              many Canadians, Curby offers an affordable way to furnish homes
+              and collect items for free
+            </span>
           </h2>
         </div>
+
         <div className="carousel-cell">
           <img className="carousel-image" src={chairs} alt="slide4" />
-          <h2 className="homepage-copy">
-            <span>Curby</span> <span>is</span> <span>all</span>
-            <span>about</span> <span>promoting</span>
-            <span>sustainability</span> <span>and</span> <span>helping</span>
-            <span>people</span> <span>connect</span> <span>with</span>
-            <span>their</span> <span>community.</span>
-            <span>Our</span>
-            <span>platform</span> <span>lets</span> <span>you</span>
-            <span>review</span> <span>nearby</span> <span>listings</span>
-            <span>of</span> <span>free</span> <span>items,</span>
-            <span>and</span> <span>even</span> <span>upload</span>
-            <span>your</span> <span>own</span> <span>items</span>
-            <span>that</span> <span>you</span> <span>want</span> <span>to</span>
-            <span>give</span> <span>away</span> <span>instead</span>
-            <span>of</span> <span>throwing</span> <span>away.</span>
-            <span>With</span> <span>Curby,</span>
-            <span>you'll</span>
-            <span>never</span> <span>miss</span> <span>a</span>
-            <span>chance</span> <span>to</span> <span>find</span> <span>a</span>
-            <span>treasure</span> <span>in</span> <span>your</span>
-            <span>neighborhood,</span> <span>and</span> <span>you'll</span>
-            <span>be</span> <span>doing</span> <span>your</span>
-            <span>part</span> <span>to</span> <span>reduce</span>
-            <span>waste</span> <span>and</span> <span>support</span>
-            <span>your</span> <span>community.</span>
+          <h2 className="homepage-copy__two">
+            <span>
+              Curby is all about promoting sustainability and helping people
+              connect with their community. Our platform lets you review nearby
+              listings of free items, and even upload your own items that you
+              want to give away instead of throwing away. With Curby, you'll
+              never miss a chance to find a treasure in your neighbourhood, and
+              you'll be doing your part to reduce waste and support your
+              community.
+            </span>
           </h2>
         </div>
+
         <div className="carousel-cell">
           <img className="carousel-image" src={street} alt="slide5" />
           <h2 className="homepage-copy">

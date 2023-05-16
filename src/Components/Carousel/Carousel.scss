@@ -7,9 +7,9 @@
 // }
 
 .carousel-cell img {
-  object-fit: contain; /* or "cover" depending on your needs */
+  object-fit: cover; /* or "cover" depending on your needs */
   //   height: 100%;
-
+  min-height: 100%;
   width: 100%;
   // opacity: 0.8;
 }
@@ -30,7 +30,7 @@
 
 .carousel-cell {
   width: 80%;
-  height: 80vh;
+  height: 100vh;
   margin-right: 10px;
   background: $primary-background-color;
   border-radius: 5px;
@@ -40,8 +40,7 @@
 .carousel-image {
   display: block;
   width: 100%;
-
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -60,14 +59,9 @@
 
 .carousel-cell {
   width: 100%;
-  background-image: url(../../assets/Images/matt-hanns-schroeter-YJuyTFWPjZU-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.carousel-image {
-  width: 100%;
-  height: auto;
+  // background-image: url(../../assets/Images/matt-hanns-schroeter-YJuyTFWPjZU-unsplash.jpg);
+  // background-position: center;
+  // background-size: cover;
 }
 
 @media only screen and (max-width: 200px) {
@@ -82,36 +76,41 @@
 }
 
 .homepage-copy {
-  max-width: 50ch;
-  text-align: center;
-  // transform: scale(0.94);
-  // animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   position: absolute;
-  top: 65rem;
+  top: 0rem;
   color: white;
+  left: 46px;
+
+  @include tablet {
+    text-align: left;
+  }
 }
 
-.homepage-copy {
-  max-width: 25rem;
-  text-align: center;
-  // transform: scale(0.94);
-  // animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+.homepage-copy__two {
+  font-size: 1rem;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   position: absolute;
-  top: 11rem;
-  color: white;
-  left: 56px;
+  top: 7rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  left: 46px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 7px;
+  padding: 1rem;
+  max-width: 18rem;
+
+  @include tablet {
+    font-size: 1.5rem;
+    max-width: 48rem;
+  }
 }
 
 .carousel-cell {
   position: relative;
-}
-
-.homepage-copy {
-  position: absolute;
-  top: 30%;
-  /* left: 25%; */
-  // transform: translate(-50%, -50%);
-  text-align: left;
 }
 
 .flickity-viewport.flickity-cell {
@@ -121,16 +120,27 @@
 }
 
 .logo-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  margin-top: 6rem;
+  margin-left: 0rem;
+  width: 20rem;
+
+  @include tablet {
+    margin-top: 6rem;
+    margin-left: 16rem;
+    width: 26rem;
+  }
+
+  @include desktop {
+    margin-top: 6rem;
+    margin-left: 36rem;
+    width: 36rem;
+  }
 }
 
-.logo {
+.logos {
   max-width: 100%;
   height: auto;
-  padding: 15%;
+  margin-top: 1rem;
 }
 
 .homepage-copytwo {
@@ -141,7 +151,6 @@
 .header {
   align-items: center;
   margin: 0rem, 1rem;
-  background-image: url("../../assets/Images/matt-hanns-schroeter-YJuyTFWPjZU-unsplash\ \(1\).jpg");
   background-size: cover;
   background-position: center;
   height: 53rem;
@@ -160,5 +169,118 @@
     background-position: center;
     height: 42rem;
     width: 100%;
+  }
+
+  &-button {
+    color: $secondary-text-color;
+    font-weight: 700;
+    background-color: $button-background-color;
+    width: 10rem;
+    text-align: center;
+
+    font-size: 0.6rem;
+    border-radius: 10px;
+    padding: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $primary-background-color;
+      color: $secondary-text-color;
+    }
+  }
+
+  &-container {
+    display: flex;
+  }
+
+  &-logo {
+    width: 10.3rem;
+    position: absolute;
+    top: 5.5rem;
+    left: 2.12rem;
+    z-index: 0;
+
+    @include tablet {
+      top: 4rem;
+      left: 22.6rem;
+    }
+    @include desktop {
+      top: 6.2rem;
+      left: 33rem;
+      width: 10.3rem;
+    }
+  }
+
+  &-title {
+    z-index: 1;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    font-size: 6rem;
+    color: $primary-text-color;
+    font-weight: 400;
+
+    @include tablet {
+      left: 25rem;
+      top: 0rem;
+    }
+
+    @include desktop {
+      left: 35rem;
+      top: 0rem;
+      font-size: 8rem;
+    }
+  }
+
+  &-copy__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    @include tablet {
+      padding-left: 6rem;
+    }
+  }
+
+  &-copy {
+    color: $primary-text-color;
+    width: 15rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    @include tablet {
+      font-size: 1.3rem;
+      width: 25rem;
+      margin-top: 5rem;
+    }
+
+    @include desktop {
+      font-size: 1.8rem;
+      width: 45rem;
+    }
+  }
+
+  &-subheader {
+    color: $primary-text-color;
+    font-size: 1.6rem;
+
+    @include tablet {
+      font-size: 2.5rem;
+    }
+
+    @include desktop {
+      font-size: 3.5rem;
+    }
+  }
+
+  &-logo__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  &-logo__image {
+    max-width: 100%;
+    height: auto;
+    padding: 15%;
   }
 }

@@ -30,10 +30,23 @@
   }
 
   &-box {
-    margin-left: 8rem;
+    margin-left: 4rem;
+    margin-top: 5rem;
 
     @include tablet {
       margin-left: 20rem;
     }
+
+    @include desktop {
+      margin-left: 45rem;
+    }
+  }
+}
+
+.logo {
+  width: 15rem;
+
+  @include tablet {
+    width: 30rem;
   }
 }
