@@ -2,6 +2,8 @@ import "./BurgerBar.scss";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
+// handle events for burgerbar
+
 function BurgerBar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,6 +14,8 @@ function BurgerBar() {
   const handleCloseMenu = () => {
     setIsOpen(false);
   };
+
+  // event listener for burgerbar
 
   useEffect(() => {
     const menuElement = document.querySelector(".menu");

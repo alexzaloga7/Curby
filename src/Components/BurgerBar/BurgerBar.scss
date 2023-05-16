@@ -2,43 +2,6 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
 
-// .menu-container {
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: center;
-//   height: 60px;
-//   margin: 1rem;
-// }
-
-.menu-icon {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 1.1rem;
-  margin: 1rem;
-}
-
-.menu-icon span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: $primary-text-color;
-  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-}
-
-.menu-icon.open span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.menu-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-icon.open span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
 .menu {
   position: fixed;
   top: 0;
@@ -49,30 +12,59 @@
   justify-content: center;
   align-items: center;
   transition: right 0.2s ease-in-out;
-}
 
-.menu.open {
-  left: 0;
+  &-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.1rem;
+    margin: 1rem;
+  }
 
-  z-index: 0;
-}
+  &-icon span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: $primary-text-color;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
 
-.menu ul {
-  list-style: none;
-  text-align: center;
-}
+  &-icon.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-.menu ul li {
-  margin: 1rem 0;
-}
+  &-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
 
-.menu ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-  font-weight: 700;
-}
+  &-icon.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-.menu ul li a:hover {
-  color: $navbar-hover;
+  &.open {
+    left: 0;
+
+    z-index: 0;
+  }
+
+  & ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  & ul li {
+    margin: 1rem 0;
+  }
+
+  & ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    font-weight: 700;
+  }
+
+  & ul li a:hover {
+    color: $navbar-hover;
+  }
 }
