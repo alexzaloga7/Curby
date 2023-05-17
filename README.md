@@ -1,72 +1,66 @@
-# Getting Started with Create React App
+# Project Name
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CURBY
 
-## Available Scripts
+# What is Curby?
 
-In the project directory, you can run:
+Curby allows users to share details of free items they spot in their neighborhood. Everyday items are left on the curb/stoop so they can be collected by garbage disposal and taken to landfill. Many of these items are in great shape & free which could be rehomed and given a new lease of life.
 
-### `npm start`
+# How does it work?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app works by allowing users to review the listings page which provides details and displays nearby items that are free to take. While those disposing of items can upload them to the platform as an extra measure before they go to a landfill, Curby's primary support comes from the general public themselves, the community that gets a thrill out of finding treasures around town and promoting sustainability by helping others.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Whats the problem Curby is trying to solve?
 
-### `npm test`
+The Canadian landfill sites are filled with millions of tonnes of furniture, appliances, and other durable goods each year. Also with the increasing costs of essential goods and services outpacing income growth for many Canadians, Curby offers an affordable way to furnish homes and collect items for free.
+Curby also promotes community engagement by encouraging people to explore their neighborhoods and share exciting finds with others. This creates a sense of shared responsibility for waste reduction and helps keep items out of landfills.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# User Profile
 
-### `npm run build`
+Cities sustainable treasure hunters. Everyday people who are seeking affordable ways to furnish their homes & collect useful items for free. People who have a passion to rehome, flip items & give them a new lease of life.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# How to use?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Clone this repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+$ git clone https://github.com/alexzaloga7/Curby.git
 
-### `npm run eject`
+# Go into the repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+$ cd Curby
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+$ npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Run the app
 
-## Learn More
+$ npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Built with
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Tech Stack
 
-### Code Splitting
+**Client:** React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Server:** Node, Express
 
-### Analyzing the Bundle Size
+# Api's
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Google Maps
+Curby API (Server) https://github.com/alexzaloga7/CurbyAPI.git
 
-### Making a Progressive Web App
+# Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+React-animated-heart (heart animation)
+Flickity (carousel)
 
-### Advanced Configuration
+# Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-Alex Zaloga https://github.com/alexzaloga7
 
-### Deployment
+# Acknowledgements/Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# Curby
+Stooping Toronto Instagram Page
+Canva Icons
+Unsplash Images

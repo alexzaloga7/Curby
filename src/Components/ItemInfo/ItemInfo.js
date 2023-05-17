@@ -3,6 +3,8 @@ import "./ItemInfo.scss";
 import DescriptionIcon from "../../assets/Icons/description.svg";
 import LocationPinIcon from "../../assets/Icons/locationred.svg";
 import ClockIcon from "../../assets/Icons/clock.svg";
+const { REACT_APP_GOOGLEMAPAPI } = process.env;
+console.log(REACT_APP_GOOGLEMAPAPI);
 
 function ItemInfo(props) {
   const [mapUrl, setMapUrl] = useState("");
@@ -20,7 +22,7 @@ function ItemInfo(props) {
 
           // Set the map URL with the location coordinates
           setMapUrl(
-            `https://www.google.com/maps/embed/v1/place?q=${lat},${lng}&key=AIzaSyBaWkdc7IserLCIeVKExv6TutiRwz0pZww`
+            `https://www.google.com/maps/embed/v1/place?q=${lat},${lng}&key=${REACT_APP_GOOGLEMAPAPI}`
           );
         }
       }

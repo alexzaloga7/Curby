@@ -66,14 +66,14 @@ class Carousel extends Component {
         <div className="carousel-cell">
           <img className="carousel-image" src={street} alt="slide2" />
 
-          <h2 className="homepage-copy__two">
+          <h2 className="homepage-copy__three">
             <span>
               Welcome to Curby - the app that helps you discover free treasures
               in your neighbourhood! Did you know that many everyday items get
-              thrown away every day, even though they're still in great
+              thrown away each day, even though they're still in great
               condition? That's where Curby comes in. Our app lets the community
-              share free items spotted on the curb in their local neighborhood,
-              so that others can give them a new lease of life!
+              share items spotted on the curb, so that others can give them a
+              new lease of life!
             </span>
           </h2>
         </div>
@@ -81,43 +81,27 @@ class Carousel extends Component {
           <img className="carousel-image" src={Garbage} alt="slide3" />
           <h2 className="homepage-copy__two">
             <span>
-              Canadian landfill sites are filled with millions of tonnes of
-              furniture, appliances, and other durable goods each year. To
-              address this growing issue and promote sustainability, Curby
-              brings an excellent solution. By encouraging people to reuse and
-              flip items that would otherwise end up in landfills, Curby is
-              helping to reduce waste and protect the planet.With the increasing
-              costs of essential goods and services outpacing income growth for
-              many Canadians, Curby offers an affordable way to furnish homes
-              and collect items for free
-            </span>
-          </h2>
-        </div>
-
-        <div className="carousel-cell">
-          <img className="carousel-image" src={Community} alt="slide4" />
-          <h2 className="homepage-copy__two">
-            <span>
-              Curby is all about promoting sustainability and helping people
-              connect with their community. Our platform lets you review nearby
-              listings of free items, and even upload your own items that you
-              want to give away instead of throwing away. With Curby, you'll
-              never miss a chance to find a treasure in your neighbourhood, and
-              you'll be doing your part to reduce waste and support your
-              community.
+              Canadian landfills are filled with millions of tonnes of furniture
+              and other durable goods each year. To address this growing issue,
+              we are giving these items one last chance of a new home by
+              notifying our community. With the increasing costs of essential
+              goods and services outpacing income growth for many Canadians,
+              Curby offers an affordable way to furnish homes and collect items
+              for free!
             </span>
           </h2>
         </div>
 
         <div className="carousel-cell">
           <img className="carousel-image" src={Join} alt="slide5" />
-          <h2 className="homepage-copy">
-            <span>Join</span> <span>the</span> <span>Curby</span>
-            <span>community</span> <span>today</span> <span>and</span>
-            <span>start</span> <span>discovering</span> <span>all</span>
-            <span>the</span> <span>amazing</span> <span>things</span>
-            <span>that</span> <span>your</span> <span>neighborhood</span>
-            <span>has</span> <span>to</span> <span>offer!</span>
+          <h2 className="homepage-copy__two">
+            <span>
+              With Curby, you'll never miss a chance to find a treasure in your
+              neighbourhood, and you'll be doing your part to reduce waste and
+              support your community. Join the Curby today and start discovering
+              all the amazing things that your neighborhood has to offer!
+            </span>
+
             <Link to={"/getstarted"}>
               <h2 className="header-button">Get Started</h2>
             </Link>

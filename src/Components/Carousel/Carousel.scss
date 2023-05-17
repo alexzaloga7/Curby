@@ -88,20 +88,54 @@
   }
 }
 
+.homepage-copy__three {
+  font-size: 1rem;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  position: absolute;
+  top: 18rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  left: 46px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  padding: 1rem;
+  max-width: 18rem;
+  transition: transform 250ms;
+
+  @include tablet {
+    font-size: 1.5rem;
+    max-width: 48rem;
+    left: 30rem;
+    top: 2rem;
+  }
+  @include desktop {
+    font-size: 1.5rem;
+    max-width: 48rem;
+    left: 0rem;
+    top: 2rem;
+  }
+}
+
+.homepage-copy__three:hover {
+  transform: translateY(-10px);
+}
+
 .homepage-copy__two {
   font-size: 1rem;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   position: absolute;
-  top: 7rem;
+  top: 15rem;
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   left: 46px;
-  border: 1px solid white;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+
   border-radius: 7px;
   padding: 1rem;
   max-width: 18rem;
+  transition: transform 250ms;
 
   @include tablet {
     font-size: 1.5rem;
@@ -109,6 +143,9 @@
   }
 }
 
+.homepage-copy__two:hover {
+  transform: translateY(-10px);
+}
 .carousel-cell {
   position: relative;
 }
@@ -140,7 +177,8 @@
 .logos {
   max-width: 100%;
   height: auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
 }
 
 .homepage-copytwo {
@@ -238,9 +276,11 @@
   &-copy__container {
     display: flex;
     flex-direction: column;
+    margin-left: 4rem;
     margin-top: 3rem;
     @include tablet {
       padding-left: 6rem;
+      margin-left: 2rem;
     }
   }
 
@@ -249,11 +289,34 @@
     width: 15rem;
     font-size: 0.9rem;
     font-weight: 500;
+    background-image: linear-gradient(
+      -225deg,
+      #86de6e 0%,
+      #80de51 29%,
+      #ffffff 67%,
+      #ffffff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
 
     @include tablet {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       width: 25rem;
-      margin-top: 5rem;
+      margin-top: 3rem;
     }
 
     @include desktop {
