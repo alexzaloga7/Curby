@@ -4,9 +4,6 @@ import "./Carousel.scss";
 import Flickity from "flickity";
 import "flickity/css/flickity.css";
 import CurbyBackgroundImage from "../../assets/Images/matt-hanns-schroeter-YJuyTFWPjZU-unsplash (1).jpg";
-import LandfillImage from "../../assets/Images/collab-media-GmqezLxud8g-unsplash.jpg";
-import NeighbourhoodImage from "../../assets/Images/paul-hanaoka-5Za2sS955yg-unsplash.jpg";
-import Community from "../../assets/Images/etienne-girardet-RuMqg2cs-M0-unsplash.jpg";
 import street from "../../assets/Images/tyler-gooding-L1dYYpcdP50-unsplash.jpg";
 import Logo from "../../assets/Logo/Logo.png";
 import BurgerBar from "../../Components/BurgerBar/BurgerBar";
@@ -66,7 +63,7 @@ class Carousel extends Component {
         <div className="carousel-cell">
           <img className="carousel-image" src={street} alt="slide2" />
 
-          <h2 className="homepage-copy__three">
+          <h2 className="homepage-copy__one">
             <span>
               Welcome to Curby - the app that helps you discover free treasures
               in your neighbourhood! Did you know that many everyday items get

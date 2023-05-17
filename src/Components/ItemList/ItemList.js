@@ -2,7 +2,6 @@ import "./ItemList.scss";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import Heart from "react-animated-heart";
-import ItemsCarousel from "../Items-Carousel/Items-Carousel";
 
 function ItemList({ nextItem }) {
   const [likedItems, setLikedItems] = useState({});

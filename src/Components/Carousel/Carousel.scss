@@ -2,29 +2,16 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
 
-// .carousel-cell {
-//   height: 900px; /* adjust as needed */
-// }
+// carousel styling
 
 .carousel-cell img {
-  object-fit: cover; /* or "cover" depending on your needs */
-  //   height: 100%;
+  object-fit: cover;
   min-height: 100%;
   width: 100%;
-  // opacity: 0.8;
-}
-
-// .carousel {
-//   width: 100%;
-//   height: 500px; /* set a fixed height here */
-// }
-
-.homepage-logo {
-  z-index: 1;
 }
 
 .carousel-cell {
-  width: 100%; /* set the width of each cell to 100% */
+  width: 100%;
   background: $secondary-text-color;
 }
 
@@ -44,12 +31,6 @@
   object-fit: cover;
 }
 
-// .flickity-enabled.is-draggable {
-//   // margin-bottom: 10%;
-// }
-
-//
-
 .carousel {
   width: 100%;
   max-width: 100%; /* set a maximum width to prevent the carousel from becoming too large */
@@ -59,9 +40,6 @@
 
 .carousel-cell {
   width: 100%;
-  // background-image: url(../../assets/Images/matt-hanns-schroeter-YJuyTFWPjZU-unsplash.jpg);
-  // background-position: center;
-  // background-size: cover;
 }
 
 @media only screen and (max-width: 200px) {
@@ -75,9 +53,9 @@
   }
 }
 
+// homepage copy styling
+
 .homepage-copy {
-  /* transform: scale(0.94); */
-  /* animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1); */
   position: absolute;
   top: 0rem;
   color: white;
@@ -88,7 +66,7 @@
   }
 }
 
-.homepage-copy__three {
+.homepage-copy__one {
   font-size: 1rem;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -117,7 +95,7 @@
   }
 }
 
-.homepage-copy__three:hover {
+.homepage-copy__one:hover {
   transform: translateY(-10px);
 }
 
@@ -146,6 +124,7 @@
 .homepage-copy__two:hover {
   transform: translateY(-10px);
 }
+
 .carousel-cell {
   position: relative;
 }
@@ -155,6 +134,8 @@
   align-items: center;
   justify-content: center;
 }
+
+// logo styling
 
 .logo-container {
   margin-top: 6rem;
@@ -181,10 +162,7 @@
   margin-left: 2rem;
 }
 
-.homepage-copytwo {
-  font-size: 1rem;
-  font-weight: 300;
-}
+// header styling
 
 .header {
   align-items: center;
@@ -289,29 +267,6 @@
     width: 15rem;
     font-size: 0.9rem;
     font-weight: 500;
-    background-image: linear-gradient(
-      -225deg,
-      #86de6e 0%,
-      #80de51 29%,
-      #ffffff 67%,
-      #ffffff 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 5s linear infinite;
-    display: inline-block;
-
-    @keyframes textclip {
-      to {
-        background-position: 200% center;
-      }
-    }
 
     @include tablet {
       font-size: 1.1rem;

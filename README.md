@@ -21,6 +21,9 @@ Cities sustainable treasure hunters. Everyday people who are seeking affordable 
 
 # How to use?
 
+We suggest you clone and run the server first before cloning the client:
+Curby API (Server) https://github.com/alexzaloga7/CurbyAPI.git
+
 # Clone this repository
 
 $ git clone https://github.com/alexzaloga7/Curby.git
@@ -47,7 +50,8 @@ $ npm start
 
 # Api's
 
-Google Maps
+Google Maps https://console.cloud.google.com/google/maps-apis please make a google cloud account and add your own API key to item info component when cloning. Google cloud provides a free trial.
+
 Curby API (Server) https://github.com/alexzaloga7/CurbyAPI.git
 
 # Dependencies
