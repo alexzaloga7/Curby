@@ -4,7 +4,6 @@ import DescriptionIcon from "../../assets/Icons/description.svg";
 import LocationPinIcon from "../../assets/Icons/locationred.svg";
 import ClockIcon from "../../assets/Icons/clock.svg";
 const { REACT_APP_GOOGLEMAPAPI } = process.env;
-console.log(REACT_APP_GOOGLEMAPAPI);
 
 function ItemInfo(props) {
   const [mapUrl, setMapUrl] = useState("");

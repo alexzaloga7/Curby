@@ -15,7 +15,6 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/:id" element={<SingleListing />}></Route>
-          {/* <Route path="/:id" element={<HomePage />}></Route> */}
           <Route path="/uploads" element={<UploadPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/getstarted" element={<GetStarted />} />

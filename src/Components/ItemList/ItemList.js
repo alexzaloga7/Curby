@@ -55,7 +55,6 @@ function ItemList({ nextItem }) {
 
   return (
     <aside className={`aside ${asideBackground}`}>
-      {/* <ItemsCarousel /> */}
       {filteredNextItem.map((item) => (
         <Link key={item.id} to={`/${item.id}`} className="aside__link">
           <div key={item.id} className="aside__box">

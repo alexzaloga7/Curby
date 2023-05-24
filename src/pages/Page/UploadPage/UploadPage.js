@@ -10,7 +10,6 @@ function UploadPage() {
   const [preview, setPreview] = useState(null);
   const [image, setImage] = useState(null);
   const navigate = useNavigate();
-
   const handleSubmit = (event) => {
     event.preventDefault();
     const submit = event.target;

@@ -19,7 +19,6 @@ function GalleryPage() {
         const { data } = await axios.get(`http://localhost:3001/items/`);
         const iteminfo = data.filter((itm) => itm.id !== id);
         setNextItems(iteminfo);
-        console.log(iteminfo);
       };
       fetchNextItems();
     }, [id]);

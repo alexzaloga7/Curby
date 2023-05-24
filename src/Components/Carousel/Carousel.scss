@@ -33,7 +33,7 @@
 
 .carousel {
   width: 100%;
-  max-width: 100%; /* set a maximum width to prevent the carousel from becoming too large */
+  max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -44,12 +44,12 @@
 
 @media only screen and (max-width: 200px) {
   .carousel {
-    max-width: 900px; /* reduce the maximum width for smaller screens */
+    max-width: 900px;
   }
 
   .carousel-image {
-    max-width: 100%; /* set a maximum width for the images to prevent them from overflowing the carousel container */
-    max-height: 300px; /* set a maximum height to maintain the aspect ratio of the images */
+    max-width: 100%;
+    max-height: 300px;
   }
 }
 

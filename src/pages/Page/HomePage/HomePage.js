@@ -9,8 +9,6 @@ import BurgerBar from "../../../Components/BurgerBar/BurgerBar";
 function HomePage() {
   return (
     <div className="HomePage">
-      {/* <PageHeader /> */}
-      {/* <BurgerBar /> */}
       <Carousel />
       <Footer />
     </div>
