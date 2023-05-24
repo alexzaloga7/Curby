@@ -49,7 +49,8 @@ class Carousel extends Component {
             </div>
             <div className="header-copy__container">
               <p className="header-copy">
-                Promote circular economy for our planet and community
+                Discover, share, and promote sustainability with Curby - your
+                neighborhood's treasure map.
               </p>
 
               <h2 className="header-subheader">Start your impact</h2>
@@ -66,11 +67,10 @@ class Carousel extends Component {
           <h2 className="homepage-copy__one">
             <span>
               Welcome to Curby - the app that helps you discover free treasures
-              in your neighbourhood! Did you know that many everyday items get
-              thrown away each day, even though they're still in great
-              condition? That's where Curby comes in. Our app lets the community
-              share items spotted on the curb, so that others can give them a
-              new lease of life!
+              in your neighbourhood! Did you know that many items get thrown
+              away even though they’re still in great condition? That's where
+              Curby comes in. Our app lets the community share items spotted on
+              the curb, so that others can give them a new lease of life!
             </span>
           </h2>
         </div>
@@ -78,13 +78,11 @@ class Carousel extends Component {
           <img className="carousel-image" src={Garbage} alt="slide3" />
           <h2 className="homepage-copy__two">
             <span>
-              Canadian landfills are filled with millions of tonnes of furniture
-              and other durable goods each year. To address this growing issue,
-              we are giving these items one last chance of a new home by
-              notifying our community. With the increasing costs of essential
-              goods and services outpacing income growth for many Canadians,
-              Curby offers an affordable way to furnish homes and collect items
-              for free!
+              Millions of durable items end up in landfill each year. To address
+              this growing issue we are giving these items one last chance of a
+              new home. With increasing costs of living, Curby offers an
+              affordable solution to furnish homes and promote sustainable
+              actions within the local community.
             </span>
           </h2>
         </div>
@@ -93,10 +91,8 @@ class Carousel extends Component {
           <img className="carousel-image" src={Join} alt="slide5" />
           <h2 className="homepage-copy__two">
             <span>
-              With Curby, you'll never miss a chance to find a treasure in your
-              neighbourhood, and you'll be doing your part to reduce waste and
-              support your community. Join the Curby today and start discovering
-              all the amazing things that your neighborhood has to offer!
+              Join Curby today and start discovering all the amazing things that
+              your neighbourhood has to offer!
             </span>
 
             <Link to={"/getstarted"}>
