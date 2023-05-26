@@ -50,7 +50,7 @@ class Carousel extends Component {
             <div className="header-copy__container">
               <p className="header-copy">
                 Discover, share, and promote sustainability with Curby - your
-                neighborhood's treasure map.
+                neighbourhood's treasure map.
               </p>
 
               <h2 className="header-subheader">Start your impact</h2>
